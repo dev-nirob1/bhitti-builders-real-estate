@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./../../node_modules/preline/variants.css";
+@source "../../node_modules/preline/dist/*.js";
+
+@theme {
+  --color-primary: #16181B;
+  --color-primary-light: #2A2F35;
+  --color-secondary: #F5B800;
+  --color-secondary-dark: #C99700;
+  --color-concrete: #ECEAE4;
+  --color-paper: #F7F6F2;
+
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
