@@ -12,4 +12,8 @@
 
   --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
+  --animate-marquee: marquee 30s linear infinite;
+  @keyframes marquee {
+    to { transform: translateX(-50%); }
+  }
 }

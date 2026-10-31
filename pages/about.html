@@ -16,7 +16,34 @@
 </head>
 
 <body id="top" class="bg-paper font-sans text-primary antialiased">
-<!-- About page: sections only (navbar and footer are added separately) -->
+<!-- Page hero -->
+<section class="relative isolate overflow-hidden bg-concrete py-20 text-primary lg:py-28">
+
+  <!-- Blueprint lines + yellow block (decorative) -->
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(22,24,27,0.06)_1px,transparent_1px)] [background-size:80px_100%]" aria-hidden="true"></div>
+  <div class="absolute -right-10 -top-10 -z-10 size-40 bg-secondary sm:size-56 lg:-right-16 lg:-top-16 lg:size-80" aria-hidden="true"></div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb">
+      <ol class="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.15em]">
+        <li><a href="./index.html" class="text-primary/60 transition-colors hover:text-primary">Home</a></li>
+        <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-[10px] text-primary/40"></i></li>
+        <li aria-current="page">About us</li>
+      </ol>
+    </nav>
+
+    <h1 class="mt-6 max-w-3xl font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-8xl">
+      About Bhitti
+    </h1>
+    <p class="mt-6 max-w-xl text-base leading-8 text-primary/70 lg:text-lg">
+      Fifteen years of building homes and workplaces that families and businesses can rely on.
+    </p>
+
+  </div>
+</section>
+  <!-- About page: sections only (navbar and footer are added separately) -->
 <section class="bg-white text-primary">
   <div class="mx-auto grid max-w-350 gap-12 px-4 py-14 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8 lg:py-20">
  

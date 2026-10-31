@@ -17,7 +17,7 @@
 
 <body class="bg-paper font-sans text-primary antialiased">
   <!-- Navbar -->
-  <header class="sticky top-0 z-50 border-b border-primary/10 bg-white text-primary">
+  <header class="sticky top-0 z-999 bg-white text-primary">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-20 items-center justify-between">
 
@@ -270,60 +270,68 @@
           </div>
         </div>
       </div>
-
-      <!-- Quick facts band -->
-      <div class="bg-secondary text-primary">
-        <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-          <ul class="grid grid-cols-3 divide-x divide-primary/20">
-            <li class="px-3 py-6 first:ps-0 sm:px-8 lg:py-8">
-              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">15+</p>
-              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Years of experience</p>
-            </li>
-            <li class="px-3 py-6 sm:px-8 lg:py-8">
-              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">120+</p>
-              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Projects completed</p>
-            </li>
-            <li class="px-3 py-6 last:pe-0 sm:px-8 lg:py-8">
-              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">3.5M</p>
-              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Square feet built</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-
     </section>
 
-    <!-- Services -->
-    <section class="bg-paper py-20 text-primary lg:py-28">
+    <!-- Quick facts (Statistics Section) band -->
+    <section class="bg-secondary text-primary">
       <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+        <ul class="grid grid-cols-1 gap-px bg-primary/20 sm:grid-cols-2 lg:grid-cols-4">
+
+          <li class="bg-secondary py-7 sm:px-8 lg:py-9">
+            <h3 class="font-display text-5xl font-bold leading-none lg:text-6xl">15+</h3>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-[0.15em]">Years of experience</p>
+          </li>
+
+          <li class="bg-secondary py-7 sm:px-8 lg:py-9">
+            <h3 class="font-display text-5xl font-bold leading-none lg:text-6xl">120+</h3>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-[0.15em]">Projects completed</p>
+          </li>
+
+          <li class="bg-secondary py-7 sm:px-8 lg:py-9">
+            <h3 class="font-display text-5xl font-bold leading-none lg:text-6xl">3.5M</h3>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-[0.15em]">Square feet built</p>
+          </li>
+
+          <li class="bg-secondary py-7 sm:px-8 lg:py-9">
+            <h3 class="font-display text-5xl font-bold leading-none lg:text-6xl">2,500+</h3>
+            <p class="mt-3 text-xs font-semibold uppercase tracking-[0.15em]">Families housed</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="bg-white py-20 text-primary">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">What we do</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              Our construction services
-            </h2>
-          </div>
-          <p class="max-w-md text-base leading-8 text-primary/70">
-            One accountable team from first sketch to final handover. Whatever the scale, we plan carefully,
-            build properly
-            and keep you informed.
-          </p>
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            What we do</p>
+          <h2
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            Our construction services
+          </h2>
         </div>
 
-        <!-- Services: open columns, no cards -->
-        <div class="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+        <!-- Services -->
+        <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
           <a href="./pages/services.html#residential"
-            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-            <span class="text-sm font-semibold tracking-widest text-primary/40">01</span>
-            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Residential</h3>
-            <p class="mt-4 text-sm leading-7 text-primary/65">
+            class="group relative isolate block overflow-hidden border border-primary/15 p-8 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-secondary before:transition-transform before:duration-500 hover:before:scale-x-100">
+            <span
+              class="flex size-14 items-center justify-center bg-secondary text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-secondary">
+              <i class="fa-solid fa-house text-xl" aria-hidden="true"></i>
+            </span>
+            <h3 class="mt-6 font-display text-3xl font-bold uppercase leading-none">Residential</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-primary">
               Apartments, duplexes and townhouses built for families who plan to stay.
             </p>
-            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+
+            <span
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 group-hover:underline">
               Learn more
               <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
                 aria-hidden="true"></i>
@@ -331,13 +339,17 @@
           </a>
 
           <a href="./pages/services.html#commercial"
-            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-            <span class="text-sm font-semibold tracking-widest text-primary/40">02</span>
-            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Commercial</h3>
-            <p class="mt-4 text-sm leading-7 text-primary/65">
+            class="group relative isolate block overflow-hidden border border-primary/15 p-8 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-secondary before:transition-transform before:duration-500 hover:before:scale-x-100">
+            <span
+              class="flex size-14 items-center justify-center bg-secondary text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-secondary">
+              <i class="fa-solid fa-building text-xl" aria-hidden="true"></i>
+            </span>
+            <h3 class="mt-6 font-display text-3xl font-bold uppercase leading-none">Commercial</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-primary">
               Offices, retail and mixed-use buildings engineered for performance and long-term value.
             </p>
-            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+            <span
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 group-hover:underline">
               Learn more
               <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
                 aria-hidden="true"></i>
@@ -345,13 +357,17 @@
           </a>
 
           <a href="./pages/services.html#renovation"
-            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-            <span class="text-sm font-semibold tracking-widest text-primary/40">03</span>
-            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Renovation</h3>
-            <p class="mt-4 text-sm leading-7 text-primary/65">
+            class="group relative isolate block overflow-hidden border border-primary/15 p-8 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-secondary before:transition-transform before:duration-500 hover:before:scale-x-100">
+            <span
+              class="flex size-14 items-center justify-center bg-secondary text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-secondary">
+              <i class="fa-solid fa-screwdriver-wrench text-xl" aria-hidden="true"></i>
+            </span>
+            <h3 class="mt-6 font-display text-3xl font-bold uppercase leading-none">Renovation</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-primary">
               Structural upgrades and full interior makeovers, delivered with minimal disruption.
             </p>
-            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+            <span
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 group-hover:underline">
               Learn more
               <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
                 aria-hidden="true"></i>
@@ -359,13 +375,17 @@
           </a>
 
           <a href="./pages/services.html#infrastructure"
-            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-            <span class="text-sm font-semibold tracking-widest text-primary/40">04</span>
-            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Infrastructure</h3>
-            <p class="mt-4 text-sm leading-7 text-primary/65">
+            class="group relative isolate block overflow-hidden border border-primary/15 p-8 before:absolute before:inset-0 before:-z-10 before:origin-left before:scale-x-0 before:bg-secondary before:transition-transform before:duration-500 hover:before:scale-x-100">
+            <span
+              class="flex size-14 items-center justify-center bg-secondary text-primary transition-colors duration-500 group-hover:bg-primary group-hover:text-secondary">
+              <i class="fa-solid fa-road text-xl" aria-hidden="true"></i>
+            </span>
+            <h3 class="mt-6 font-display text-3xl font-bold uppercase leading-none">Infrastructure</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65 transition-colors duration-500 group-hover:text-primary">
               Roads, drainage and utility works built to municipal standards and designed to last.
             </p>
-            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+            <span
+              class="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 group-hover:underline">
               Learn more
               <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
                 aria-hidden="true"></i>
@@ -376,435 +396,127 @@
       </div>
     </section>
 
+
     <!-- Featured projects -->
-    <section class="bg-concrete py-20 text-primary lg:py-28">
+    <section class="bg-paper py-20 text-primary lg:py-28">
       <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p
-              class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/60 before:h-0.5 before:w-10 before:bg-secondary">
-              Featured projects</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              Our recent work
-            </h2>
-          </div>
-          <a href="./pages/projects.html"
-            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-primary before:transition-transform before:duration-300 hover:text-white hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-            <span class="relative">View all projects</span>
-            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-              aria-hidden="true"></i>
-          </a>
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            Featured projects</p>
+          <h2
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            Our recent work
+          </h2>
         </div>
 
         <!-- Asymmetric layout: one large project, two stacked -->
-        <div class="mt-14 grid gap-6 lg:h-190 lg:grid-cols-12 lg:grid-rows-2">
+        <div class="mt-14 grid gap-6 lg:grid-cols-12 lg:grid-rows-2">
 
           <!-- Project 1 (large) -->
-          <article class="min-h-120 lg:col-span-7 lg:row-span-2 lg:min-h-0">
-            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
-              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
-                alt="Bhitti Heights apartment building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
+          <article class="lg:col-span-7 lg:row-span-2">
+            <a href="./pages/project-details.html" class="group flex h-full flex-col bg-white">
+              <div class="relative min-h-80 flex-1 overflow-hidden bg-concrete">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
+                  alt="Bhitti Heights apartment building" loading="lazy"
+                  class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <span
-                  class="bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+                  class="absolute left-3 top-3 bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
               </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6 lg:p-8">
-                  <h3
-                    class="font-display text-4xl font-bold uppercase leading-none tracking-wide sm:text-5xl lg:text-6xl">
-                    Bhitti Heights</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">48 units</p>
-                  </li>
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">1,200+ sqft</p>
-                  </li>
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">2024</p>
-                  </li>
-                </ul>
+              <div class="p-6">
+                <h3 class="font-display text-4xl font-bold uppercase leading-none tracking-wide">Bhitti Heights</h3>
+                <p class="mt-2 text-sm text-primary/60">Dhanmondi, Dhaka &middot; 48 homes &middot; 2024</p>
+                <span class="mt-3 inline-flex items-center gap-2 text-sm font-semibold">
+                  View project
+                  <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"></i>
+                </span>
               </div>
             </a>
           </article>
 
           <!-- Project 2 -->
-          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
-            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                alt="Orchard Tower commercial building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
+          <article class="lg:col-span-5">
+            <a href="./pages/project-details.html" class="group flex h-full flex-col bg-white">
+              <div class="relative min-h-64 flex-1 overflow-hidden bg-concrete">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                  alt="Orchard Tower commercial building" loading="lazy"
+                  class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <span
-                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
+                  class="absolute left-3 top-3 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
               </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6">
-                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Orchard
-                    Tower</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">14 floors</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">85,000 sqft</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Dec 2026</p>
-                  </li>
-                </ul>
+              <div class="p-6">
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Orchard Tower</h3>
+                <p class="mt-2 text-sm text-primary/60">Banani, Dhaka &middot; 14 floors &middot; 2026</p>
+                <span class="mt-3 inline-flex items-center gap-2 text-sm font-semibold">
+                  View project
+                  <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"></i>
+                </span>
               </div>
             </a>
           </article>
 
           <!-- Project 3 -->
-          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
-            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
-              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
-                alt="Lakeview Residence apartment building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
+          <article class="lg:col-span-5">
+            <a href="./pages/project-details.html" class="group flex h-full flex-col bg-white">
+              <div class="relative min-h-64 flex-1 overflow-hidden bg-concrete">
+                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
+                  alt="Lakeview Residence apartment building" loading="lazy"
+                  class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <span
-                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+                  class="absolute left-3 top-3 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
               </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6">
-                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Lakeview
-                    Residence</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">36 units</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">1,350+ sqft</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Jun 2027</p>
-                  </li>
-                </ul>
+              <div class="p-6">
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Lakeview Residence</h3>
+                <p class="mt-2 text-sm text-primary/60">Uttara, Dhaka &middot; 36 homes &middot; 2027</p>
+                <span class="mt-3 inline-flex items-center gap-2 text-sm font-semibold">
+                  View project
+                  <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"></i>
+                </span>
               </div>
             </a>
           </article>
 
         </div>
-      </div>
-    </section>
 
-    <!-- Featured projects -->
-    <section class="bg-primary py-20 text-white lg:py-28">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
-        <!-- Heading -->
-        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              Our recent work
-            </h2>
-          </div>
+        <!-- View all -->
+        <div class="mt-12 text-center">
           <a href="./pages/projects.html"
-            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100">
+            class="group relative inline-flex items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-primary before:transition-transform before:duration-300 hover:text-white hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
             <span class="relative">View all projects</span>
             <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
               aria-hidden="true"></i>
           </a>
         </div>
 
-        <!-- List -->
-        <div class="mt-14">
-
-          <!-- Column labels (desktop) -->
-          <div
-            class="hidden border-b border-white/30 px-4 pb-4 text-xs font-semibold uppercase tracking-[0.15em] text-white/50 lg:grid lg:grid-cols-12 lg:gap-6">
-            <span class="col-span-5">Project</span>
-            <span class="col-span-2">Location</span>
-            <span class="col-span-2">Type</span>
-            <span class="col-span-1">Year</span>
-            <span class="col-span-2">Status</span>
-          </div>
-
-          <ul>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Bhitti Heights</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Dhanmondi, Dhaka</span>
-                  <span class="lg:col-span-2">Residential</span>
-                  <span class="lg:col-span-1">2024</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-white/50"></span>Completed</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"
-                    alt="Bhitti Heights" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Bhitti Plaza</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Gulshan, Dhaka</span>
-                  <span class="lg:col-span-2">Commercial</span>
-                  <span class="lg:col-span-1">2025</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-white/50"></span>Completed</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
-                    alt="Bhitti Plaza" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img
-                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Lakeview Residence</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Uttara, Dhaka</span>
-                  <span class="lg:col-span-2">Residential</span>
-                  <span class="lg:col-span-1">2026</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-secondary"></span>Ongoing</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80"
-                    alt="Lakeview Residence" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img
-                    src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Orchard Tower</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Banani, Dhaka</span>
-                  <span class="lg:col-span-2">Commercial</span>
-                  <span class="lg:col-span-1">2026</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-secondary"></span>Ongoing</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
-                    alt="Orchard Tower" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img
-                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Riverside Court</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Bashundhara, Dhaka</span>
-                  <span class="lg:col-span-2">Residential</span>
-                  <span class="lg:col-span-1">2023</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-white/50"></span>Completed</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80"
-                    alt="Riverside Court" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img
-                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-            <li class="border-b border-white/15">
-              <a href="./pages/project-details.html"
-                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
-                <h3
-                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
-                  Green Road Drainage</h3>
-                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
-                  <span class="lg:col-span-2">Mirpur, Dhaka</span>
-                  <span class="lg:col-span-2">Infrastructure</span>
-                  <span class="lg:col-span-1">2022</span>
-                  <span class="flex items-center gap-2 lg:col-span-2"><span
-                      class="size-2 bg-white/50"></span>Completed</span>
-                </div>
-                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
-                    alt="Green Road Drainage" loading="lazy" class="size-full object-cover" />
-                </div>
-                <div
-                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
-                  <img
-                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
-                    alt="" loading="lazy" class="size-full object-cover" />
-                </div>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
       </div>
     </section>
-    <!-- Numbers -->
-    <section class="bg-secondary py-16 text-primary lg:py-20">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
 
-        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <h2 class="max-w-xl font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl">
-            Numbers that speak for our work
-          </h2>
-          <p class="max-w-sm text-sm leading-7 text-primary/75">
-            Every figure below is a family housed, a site delivered or a promise kept.
-          </p>
-        </div>
 
-        <dl class="mt-12 grid grid-cols-2 gap-y-10 border-t-2 border-primary pt-10 lg:grid-cols-4 lg:gap-y-0">
-
-          <div class="pe-6 lg:pe-8">
-            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">2,500+</dd>
-            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Families housed</dt>
-            <p class="mt-2 text-sm leading-6 text-primary/70">Homes handed over across Dhaka.</p>
-          </div>
-
-          <div class="border-primary/25 ps-6 lg:border-s lg:ps-8 lg:pe-8">
-            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">350+</dd>
-            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Team members</dt>
-            <p class="mt-2 text-sm leading-6 text-primary/70">Engineers, architects and skilled crew.</p>
-          </div>
-
-          <div class="pe-6 lg:border-s lg:border-primary/25 lg:ps-8 lg:pe-8">
-            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">96%</dd>
-            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">On-time handover</dt>
-            <p class="mt-2 text-sm leading-6 text-primary/70">Projects delivered on the agreed date.</p>
-          </div>
-
-          <div class="border-primary/25 ps-6 lg:border-s lg:ps-8">
-            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">12</dd>
-            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Active sites</dt>
-            <p class="mt-2 text-sm leading-6 text-primary/70">Buildings under construction right now.</p>
-          </div>
-
-        </dl>
-      </div>
-    </section>
     <!-- Quality and safety -->
-    <section class="bg-concrete py-20 text-primary lg:py-28">
-      <div class="mx-auto grid max-w-350 items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
+    <section class="bg-white py-20 text-primary">
+      <div class="mx-auto grid max-w-7xl items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
 
         <!-- Image with hard yellow offset -->
         <div class="relative mb-5 me-5 lg:mb-7 lg:me-7">
           <div class="absolute left-5 top-5 size-full bg-secondary lg:left-7 lg:top-7" aria-hidden="true"></div>
-          <div class="relative aspect-4/5 overflow-hidden bg-white">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
-              alt="Site engineers inspecting construction work" loading="lazy" class="size-full object-cover" />
-          </div>
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+            alt="Site engineers inspecting construction work" loading="lazy"
+            class="relative aspect-4/5 size-full object-cover" />
         </div>
 
         <!-- Content -->
         <div>
           <p
-            class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/60 before:h-0.5 before:w-10 before:bg-secondary">
-            Quality and safety</p>
+            class="flex items-center justify-start gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            Quality and Safety</p>
+
           <h2
-            class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
             Built right, built safe
           </h2>
           <p class="mt-6 max-w-xl text-base leading-8 text-primary/70">
@@ -812,605 +524,378 @@
             day.
           </p>
 
-          <ul class="mt-10 border-t border-primary/15">
-            <li class="flex gap-5 border-b border-primary/15 py-6">
+          <ul class="mt-10 space-y-8">
+            <li class="flex gap-5">
               <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
               <div>
                 <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Safety record</h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Daily site briefings, protective gear and trained
+                <p class="mt-2 text-sm leading-7 text-primary/65">Daily site briefings, protective gear and trained
                   supervisors on every project.</p>
               </div>
             </li>
-            <li class="flex gap-5 border-b border-primary/15 py-6">
+            <li class="flex gap-5">
               <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
               <div>
                 <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Certified materials
                 </h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Cement, steel and fittings sourced from approved
+                <p class="mt-2 text-sm leading-7 text-primary/65">Cement, steel and fittings sourced from approved
                   suppliers and tested before use.</p>
               </div>
             </li>
-            <li class="flex gap-5 border-b border-primary/15 py-6">
+            <li class="flex gap-5">
               <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
               <div>
                 <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">On-time handover</h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">A clear schedule from day one, with progress updates
+                <p class="mt-2 text-sm leading-7 text-primary/65">A clear schedule from day one, with progress updates
                   until the keys are in your hand.</p>
               </div>
             </li>
-            <li class="flex gap-5 border-b border-primary/15 py-6">
+            <li class="flex gap-5">
               <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
               <div>
                 <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Structural warranty
                 </h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Written warranty on structure and finishes, with a team
-                  ready to respond after handover.</p>
+                <p class="mt-2 text-sm leading-7 text-primary/65">Written warranty on structure and finishes, with a
+                  team ready to respond after handover.</p>
               </div>
             </li>
           </ul>
-
-          <!-- Certifications -->
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <p class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">Certified and compliant
-            </p>
-            <ul class="flex flex-wrap gap-2">
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                ISO 9001</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                ISO 45001</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                REHAB Member</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                BNBC Compliant</li>
-            </ul>
-          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- Quality and safety -->
-    <section class="bg-primary py-20 text-white lg:py-28">
-      <div class="mx-auto grid max-w-350 items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
-
-        <!-- Image with hard yellow offset -->
-        <div class="relative mb-5 me-5 lg:mb-7 lg:me-7">
-          <div class="absolute left-5 top-5 size-full bg-secondary lg:left-7 lg:top-7" aria-hidden="true"></div>
-          <div class="relative aspect-4/5 overflow-hidden bg-primary-light">
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
-              alt="Site engineers inspecting construction work" loading="lazy" class="size-full object-cover" />
-          </div>
-        </div>
-
-        <!-- Content -->
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Quality and safety</p>
-          <h2
-            class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-            Built right, built safe
-          </h2>
-          <p class="mt-6 max-w-xl text-base leading-8 text-white/65">
-            Every site follows the same strict standards, from the materials we order to the way our crews work each
-            day.
-          </p>
-
-          <ul class="mt-10 border-t border-white/15">
-            <li class="flex gap-5 border-b border-white/15 py-6">
-              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
-              <div>
-                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Safety record</h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Daily site briefings, protective gear and trained
-                  supervisors on every project.</p>
-              </div>
-            </li>
-            <li class="flex gap-5 border-b border-white/15 py-6">
-              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
-              <div>
-                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Certified materials
-                </h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Cement, steel and fittings sourced from approved
-                  suppliers and tested before use.</p>
-              </div>
-            </li>
-            <li class="flex gap-5 border-b border-white/15 py-6">
-              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
-              <div>
-                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">On-time handover</h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">A clear schedule from day one, with progress updates
-                  until the keys are in your hand.</p>
-              </div>
-            </li>
-            <li class="flex gap-5 border-b border-white/15 py-6">
-              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
-              <div>
-                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Structural warranty
-                </h3>
-                <p class="mt-2 text-sm leading-7 text-white/60">Written warranty on structure and finishes, with a team
-                  ready to respond after handover.</p>
-              </div>
-            </li>
-          </ul>
-
-          <!-- Certifications -->
-          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <p class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">Certified and compliant
-            </p>
-            <ul class="flex flex-wrap gap-2">
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                ISO 9001</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                ISO 45001</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                REHAB Member</li>
-              <li
-                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
-                BNBC Compliant</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- Featured projects -->
-    <section class="bg-primary py-20 text-white lg:py-28">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
-        <!-- Heading -->
-        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              Our recent work
-            </h2>
-          </div>
-          <a href="./pages/projects.html"
-            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            <span class="relative">View all projects</span>
-            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-              aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <!-- Asymmetric layout: one large project, two stacked -->
-        <div class="mt-14 grid gap-6 lg:h-190 lg:grid-cols-12 lg:grid-rows-2">
-
-          <!-- Project 1 (large) -->
-          <article class="min-h-120 lg:col-span-7 lg:row-span-2 lg:min-h-0">
-            <a href="./pages/project-details.html"
-              class="group relative block size-full overflow-hidden bg-primary-light">
-              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
-                alt="Bhitti Heights apartment building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
-                <span
-                  class="bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
-              </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6 lg:p-8">
-                  <h3
-                    class="font-display text-4xl font-bold uppercase leading-none tracking-wide sm:text-5xl lg:text-6xl">
-                    Bhitti Heights</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">48 units</p>
-                  </li>
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">1,200+ sqft</p>
-                  </li>
-                  <li class="px-5 py-4 lg:px-8">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">2024</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
-            <a href="./pages/project-details.html"
-              class="group relative block size-full overflow-hidden bg-primary-light">
-              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
-                alt="Orchard Tower commercial building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
-                <span
-                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
-              </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6">
-                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Orchard
-                    Tower</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">14 floors</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">85,000 sqft</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Dec 2026</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
-            <a href="./pages/project-details.html"
-              class="group relative block size-full overflow-hidden bg-primary-light">
-              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
-                alt="Lakeview Residence apartment building" loading="lazy"
-                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
-
-              <div class="absolute left-5 top-5 flex gap-2">
-                <span
-                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
-              </div>
-              <span
-                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
-              </span>
-
-              <div class="absolute inset-x-0 bottom-0">
-                <div class="p-6">
-                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Lakeview
-                    Residence</h3>
-                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
-                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
-                  </p>
-                </div>
-                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">36 units</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">1,350+ sqft</p>
-                  </li>
-                  <li class="px-4 py-3 sm:px-5">
-                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
-                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Jun 2027</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Featured projects -->
-    <section class="bg-primary py-20 text-white lg:py-28">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
-        <!-- Heading -->
-        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              Our recent work
-            </h2>
-          </div>
-          <a href="./pages/projects.html"
-            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
-            <span class="relative">View all projects</span>
-            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-              aria-hidden="true"></i>
-          </a>
-        </div>
-
-        <!-- Project cards -->
-        <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-
-          <!-- Project 1 -->
-          <article>
-            <a href="./pages/project-details.html"
-              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
-              <div class="relative aspect-4/3 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"
-                  alt="Bhitti Heights apartment building" loading="lazy"
-                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <span
-                  class="absolute left-4 top-4 bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
-                <span
-                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
-              </div>
-              <div class="p-6 lg:p-7">
-                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Bhitti Heights</h3>
-                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
-                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
-                </p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
-                  <li class="pe-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">48 units</p>
-                  </li>
-                  <li class="px-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">1,200+ sqft</p>
-                  </li>
-                  <li class="ps-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">2024</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- Project 2 -->
-          <article>
-            <a href="./pages/project-details.html"
-              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
-              <div class="relative aspect-4/3 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
-                  alt="Orchard Tower commercial building" loading="lazy"
-                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <span
-                  class="absolute left-4 top-4 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
-              </div>
-              <div class="p-6 lg:p-7">
-                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Orchard Tower</h3>
-                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
-                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
-                </p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
-                  <li class="pe-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">14 floors</p>
-                  </li>
-                  <li class="px-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">85,000 sqft</p>
-                  </li>
-                  <li class="ps-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">Dec 2026</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="md:col-span-2 lg:col-span-1">
-            <a href="./pages/project-details.html"
-              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
-              <div class="relative aspect-4/3 overflow-hidden md:aspect-video lg:aspect-4/3">
-                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80"
-                  alt="Lakeview Residence apartment building" loading="lazy"
-                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                <span
-                  class="absolute left-4 top-4 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
-                <span
-                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
-              </div>
-              <div class="p-6 lg:p-7">
-                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Lakeview Residence</h3>
-                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
-                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
-                </p>
-                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
-                  <li class="pe-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">36 units</p>
-                  </li>
-                  <li class="px-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">1,350+ sqft</p>
-                  </li>
-                  <li class="ps-3">
-                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
-                    <p class="mt-1 font-display text-xl font-semibold uppercase">Jun 2027</p>
-                  </li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
     <!-- Process -->
-    <section class="bg-paper py-20 text-primary lg:py-28">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
+    <section class="bg-paper py-20 text-primary">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <!-- Heading -->
-        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-          <div class="max-w-2xl">
-            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">How we work</p>
-            <h2
-              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-              From first call to final handover
-            </h2>
-          </div>
-          <p class="max-w-md text-base leading-8 text-primary/70">
-            A clear five-step process, so you always know what is happening and what comes next.
-          </p>
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            How we work</p>
+          <h2
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            From first call to final handover
+          </h2>
         </div>
 
-        <!-- Steps -->
-        <ol
-          class="relative mt-16 grid gap-12 before:absolute before:bottom-0 before:left-5 before:top-0 before:w-0.5 before:bg-primary/15 lg:grid-cols-5 lg:gap-8 lg:before:bottom-auto lg:before:left-0 lg:before:right-0 lg:before:top-5 lg:before:h-0.5 lg:before:w-auto">
+        <!-- Steps (expanding image panels, CSS only) -->
+        <ol class="group/list mt-16 grid gap-3 sm:grid-cols-2 lg:flex lg:h-[500px] lg:gap-0">
 
-          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+          <!-- 1 (open by default) -->
+          <li
+            class="group/item relative flex min-h-[380px] flex-col overflow-hidden bg-primary text-white transition-all duration-700 lg:min-h-0 lg:flex-[2.5] lg:group-has-[li:not(:first-child):hover]/list:flex-1">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy"
+              class="absolute inset-0 size-full object-cover transition-all duration-700 lg:scale-105 lg:group-has-[li:not(:first-child):hover]/list:scale-100 lg:group-has-[li:not(:first-child):hover]/list:grayscale" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/45 to-primary/10"></div>
+            <div
+              class="absolute inset-0 bg-primary/30 transition-opacity duration-700 lg:opacity-0 lg:group-has-[li:not(:first-child):hover]/list:opacity-100">
+            </div>
             <span
-              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">1</span>
-            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Consultation</h3>
-            <p class="mt-3 text-sm leading-7 text-primary/65">
-              We listen to your plot, budget and goals, then outline what is possible.
-            </p>
+              class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-secondary transition-transform duration-700 lg:scale-x-100 lg:group-has-[li:not(:first-child):hover]/list:scale-x-0"></span>
+
+            <div class="relative flex flex-1 flex-col justify-between gap-10 p-6 lg:p-5 xl:p-7">
+              <div class="flex items-start justify-between">
+                <span class="bg-secondary px-3 py-1 font-display text-xl font-bold text-primary">01</span>
+                <i class="fa-solid fa-comments mt-1 text-lg text-white/80"></i>
+              </div>
+              <div class="lg:max-w-sm">
+                <h3 class="font-display text-xl font-bold uppercase leading-none xl:text-2xl">Consultation</h3>
+                <div
+                  class="grid grid-rows-[1fr] transition-all duration-500 lg:group-has-[li:not(:first-child):hover]/list:grid-rows-[0fr]">
+                  <div
+                    class="overflow-hidden transition-opacity duration-500 lg:group-has-[li:not(:first-child):hover]/list:opacity-0">
+                    <p class="mt-3 text-sm leading-7 text-white/80">We listen to your plot, budget and goals, then
+                      outline what is possible.</p>
+                    <p
+                      class="mt-4 inline-block border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-secondary">
+                      1 – 2 weeks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
-          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+          <!-- 2 -->
+          <li
+            class="group/item relative flex min-h-[380px] flex-col overflow-hidden bg-primary text-white transition-all duration-700 lg:min-h-0 lg:flex-1 lg:border-s-2 lg:border-paper lg:hover:flex-[2.5]">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy"
+              class="absolute inset-0 size-full object-cover transition-all duration-700 lg:grayscale lg:group-hover/item:scale-105 lg:group-hover/item:grayscale-0" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/45 to-primary/10"></div>
+            <div class="absolute inset-0 bg-primary/30 transition-opacity duration-700 lg:group-hover/item:opacity-0">
+            </div>
             <span
-              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">2</span>
-            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Design</h3>
-            <p class="mt-3 text-sm leading-7 text-primary/65">
-              Architects and engineers prepare plans, drawings and a clear cost estimate.
-            </p>
+              class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-secondary transition-transform duration-700 lg:group-hover/item:scale-x-100"></span>
+
+            <div class="relative flex flex-1 flex-col justify-between gap-10 p-6 lg:p-5 xl:p-7">
+              <div class="flex items-start justify-between">
+                <span class="bg-secondary px-3 py-1 font-display text-xl font-bold text-primary">02</span>
+                <i class="fa-solid fa-compass-drafting mt-1 text-lg text-white/80"></i>
+              </div>
+              <div class="lg:max-w-sm">
+                <h3 class="font-display text-xl font-bold uppercase leading-none xl:text-2xl">Design</h3>
+                <div
+                  class="grid grid-rows-[1fr] transition-all duration-500 lg:grid-rows-[0fr] lg:group-hover/item:grid-rows-[1fr]">
+                  <div
+                    class="overflow-hidden transition-opacity duration-500 lg:opacity-0 lg:group-hover/item:opacity-100">
+                    <p class="mt-3 text-sm leading-7 text-white/80">Architects and engineers prepare plans, drawings and
+                      a clear cost estimate.</p>
+                    <p
+                      class="mt-4 inline-block border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-secondary">
+                      3 – 6 weeks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
-          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+          <!-- 3 -->
+          <li
+            class="group/item relative flex min-h-[380px] flex-col overflow-hidden bg-primary text-white transition-all duration-700 lg:min-h-0 lg:flex-1 lg:border-s-2 lg:border-paper lg:hover:flex-[2.5]">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy"
+              class="absolute inset-0 size-full object-cover transition-all duration-700 lg:grayscale lg:group-hover/item:scale-105 lg:group-hover/item:grayscale-0" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/45 to-primary/10"></div>
+            <div class="absolute inset-0 bg-primary/30 transition-opacity duration-700 lg:group-hover/item:opacity-0">
+            </div>
             <span
-              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">3</span>
-            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Approval</h3>
-            <p class="mt-3 text-sm leading-7 text-primary/65">
-              We handle permits and authority approvals so you never have to chase paperwork.
-            </p>
+              class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-secondary transition-transform duration-700 lg:group-hover/item:scale-x-100"></span>
+
+            <div class="relative flex flex-1 flex-col justify-between gap-10 p-6 lg:p-5 xl:p-7">
+              <div class="flex items-start justify-between">
+                <span class="bg-secondary px-3 py-1 font-display text-xl font-bold text-primary">03</span>
+                <i class="fa-solid fa-file-signature mt-1 text-lg text-white/80"></i>
+              </div>
+              <div class="lg:max-w-sm">
+                <h3 class="font-display text-xl font-bold uppercase leading-none xl:text-2xl">Approval</h3>
+                <div
+                  class="grid grid-rows-[1fr] transition-all duration-500 lg:grid-rows-[0fr] lg:group-hover/item:grid-rows-[1fr]">
+                  <div
+                    class="overflow-hidden transition-opacity duration-500 lg:opacity-0 lg:group-hover/item:opacity-100">
+                    <p class="mt-3 text-sm leading-7 text-white/80">We handle permits and authority approvals so you
+                      never have to chase paperwork.</p>
+                    <p
+                      class="mt-4 inline-block border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-secondary">
+                      4 – 8 weeks</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
-          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+          <!-- 4 -->
+          <li
+            class="group/item relative flex min-h-[380px] flex-col overflow-hidden bg-primary text-white transition-all duration-700 lg:min-h-0 lg:flex-1 lg:border-s-2 lg:border-paper lg:hover:flex-[2.5]">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy"
+              class="absolute inset-0 size-full object-cover transition-all duration-700 lg:grayscale lg:group-hover/item:scale-105 lg:group-hover/item:grayscale-0" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/45 to-primary/10"></div>
+            <div class="absolute inset-0 bg-primary/30 transition-opacity duration-700 lg:group-hover/item:opacity-0">
+            </div>
             <span
-              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">4</span>
-            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Construction</h3>
-            <p class="mt-3 text-sm leading-7 text-primary/65">
-              Skilled crews build to plan, with regular site updates and quality checks.
-            </p>
+              class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-secondary transition-transform duration-700 lg:group-hover/item:scale-x-100"></span>
+
+            <div class="relative flex flex-1 flex-col justify-between gap-10 p-6 lg:p-5 xl:p-7">
+              <div class="flex items-start justify-between">
+                <span class="bg-secondary px-3 py-1 font-display text-xl font-bold text-primary">04</span>
+                <i class="fa-solid fa-helmet-safety mt-1 text-lg text-white/80"></i>
+              </div>
+              <div class="lg:max-w-sm">
+                <h3 class="font-display text-xl font-bold uppercase leading-none xl:text-2xl">Construction</h3>
+                <div
+                  class="grid grid-rows-[1fr] transition-all duration-500 lg:grid-rows-[0fr] lg:group-hover/item:grid-rows-[1fr]">
+                  <div
+                    class="overflow-hidden transition-opacity duration-500 lg:opacity-0 lg:group-hover/item:opacity-100">
+                    <p class="mt-3 text-sm leading-7 text-white/80">Skilled crews build to plan, with regular site
+                      updates and quality checks.</p>
+                    <p
+                      class="mt-4 inline-block border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-secondary">
+                      10 – 18 months</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
-          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+          <!-- 5 -->
+          <li
+            class="group/item relative flex min-h-[380px] flex-col overflow-hidden bg-primary text-white transition-all duration-700 sm:col-span-2 lg:col-span-1 lg:min-h-0 lg:flex-1 lg:border-s-2 lg:border-paper lg:hover:flex-[2.5]">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy"
+              class="absolute inset-0 size-full object-cover transition-all duration-700 lg:grayscale lg:group-hover/item:scale-105 lg:group-hover/item:grayscale-0" />
+            <div class="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/45 to-primary/10"></div>
+            <div class="absolute inset-0 bg-primary/30 transition-opacity duration-700 lg:group-hover/item:opacity-0">
+            </div>
             <span
-              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-primary font-display text-xl font-bold text-secondary">5</span>
-            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Handover</h3>
-            <p class="mt-3 text-sm leading-7 text-primary/65">
-              Final inspection, documents and keys, followed by warranty support.
-            </p>
+              class="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 bg-secondary transition-transform duration-700 lg:group-hover/item:scale-x-100"></span>
+
+            <div class="relative flex flex-1 flex-col justify-between gap-10 p-6 lg:p-5 xl:p-7">
+              <div class="flex items-start justify-between">
+                <span class="bg-secondary px-3 py-1 font-display text-xl font-bold text-primary">05</span>
+                <i class="fa-solid fa-key mt-1 text-lg text-white/80"></i>
+              </div>
+              <div class="lg:max-w-sm">
+                <h3 class="font-display text-xl font-bold uppercase leading-none xl:text-2xl">Handover</h3>
+                <div
+                  class="grid grid-rows-[1fr] transition-all duration-500 lg:grid-rows-[0fr] lg:group-hover/item:grid-rows-[1fr]">
+                  <div
+                    class="overflow-hidden transition-opacity duration-500 lg:opacity-0 lg:group-hover/item:opacity-100">
+                    <p class="mt-3 text-sm leading-7 text-white/80">Final inspection, documents and keys, followed by
+                      warranty support.</p>
+                    <p
+                      class="mt-4 inline-block border border-white/30 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-secondary">
+                      Warranty included</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </li>
 
         </ol>
       </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="bg-paper py-20 text-primary lg:py-28">
-      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
 
-        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">Client stories</p>
+    <!-- Partners -->
+    <section class="bg-white py-20 text-primary">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            Our partners</p>
+          <h2
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            Trusted by banks and suppliers
+          </h2>
+        </div>
+      </div>
+
+      <!-- Marquee -->
+      <div
+        class="mt-14 overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]">
+        <div class="flex w-max animate-marquee hover:paused motion-reduce:animate-none">
+
+          <ul class="flex shrink-0 items-center gap-16 pe-16">
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+One" alt="Bank One" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+Two" alt="Bank Two" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+Three" alt="Bank Three" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Cement+Co" alt="Cement Co" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Steel+Co" alt="Steel Co" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Tiles+Co" alt="Tiles Co" loading="lazy"
+                class="h-12 w-auto opacity-60 transition-opacity duration-300 hover:opacity-100" /></li>
+          </ul>
+
+          <!-- Duplicate for a seamless loop -->
+          <ul class="flex shrink-0 items-center gap-16 pe-16" aria-hidden="true">
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+One" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+Two" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Bank+Three" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Cement+Co" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Steel+Co" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+            <li><img src="https://placehold.co/180x60/ffffff/16181B?text=Tiles+Co" alt="" loading="lazy"
+                class="h-12 w-auto opacity-60" /></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-paper py-20 text-primary">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="mx-auto max-w-2xl text-center">
+          <p
+            class="flex items-center justify-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-secondary after:h-0.5 after:w-8 after:bg-secondary">
+            Client stories</p>
+          <h2
+            class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            What our clients say
+          </h2>
+        </div>
 
         <!-- Carousel (Preline, no custom JS) -->
-        <div data-hs-carousel='{"loadingClasses": "opacity-0", "isInfiniteLoop": true}' class="relative mt-8">
+        <div data-hs-carousel='{"loadingClasses": "opacity-0", "isInfiniteLoop": true}'
+          class="relative mx-auto mt-14 max-w-4xl">
 
-          <div class="hs-carousel relative min-h-[560px] w-full overflow-hidden sm:min-h-[460px] lg:min-h-[440px]">
+          <div class="hs-carousel relative min-h-105 w-full overflow-hidden bg-concrete sm:min-h-95 lg:min-h-85">
             <div
-              class="hs-carousel-body absolute bottom-0 start-0 top-0 flex flex-nowrap opacity-0 transition-transform duration-700 ease-out">
+              class="hs-carousel-body absolute inset-y-0 start-0 flex flex-nowrap opacity-0 transition-transform duration-700 ease-out">
 
               <!-- Slide 1 -->
               <div class="hs-carousel-slide">
-                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
-                  <div>
-                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
-                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
-                    </span>
-                    <blockquote
-                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
-                      Bhitti handed over our apartment two weeks before the date they promised, and the finish was
-                      better
-                      than the model flat. Every question got a straight answer.
-                    </blockquote>
+                <figure class="flex h-full flex-col items-center justify-center px-6 py-10 text-center sm:px-12">
+                  <div class="text-secondary" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
-                  <figcaption class="flex items-center gap-4">
-                    <span class="h-12 w-1 bg-secondary"></span>
-                    <div>
-                      <p class="text-base font-semibold">Farhana Rahman</p>
-                      <p class="text-sm text-primary/60">Homeowner, Lakeview Residence</p>
-                    </div>
+                  <blockquote class="mt-6 font-display text-2xl font-semibold leading-snug sm:text-3xl">
+                    Bhitti handed over our apartment two weeks before the date they promised, and the finish was better
+                    than the model flat. Every question got a straight answer.
+                  </blockquote>
+                  <figcaption class="mt-8 flex items-center gap-4 text-start">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80"
+                      alt="Farhana Rahman" class="size-14 object-cover" />
+                    <span>
+                      <span class="block font-semibold">Farhana Rahman</span>
+                      <span class="block text-sm text-primary/60">Homeowner, Lakeview Residence</span>
+                    </span>
                   </figcaption>
                 </figure>
               </div>
 
               <!-- Slide 2 -->
               <div class="hs-carousel-slide">
-                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
-                  <div>
-                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
-                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
-                    </span>
-                    <blockquote
-                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
-                      We built our head office with them. The site stayed safe, the updates came every week and the
-                      budget
-                      never moved from the first estimate.
-                    </blockquote>
+                <figure class="flex h-full flex-col items-center justify-center px-6 py-10 text-center sm:px-12">
+                  <div class="text-secondary" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
-                  <figcaption class="flex items-center gap-4">
-                    <span class="h-12 w-1 bg-secondary"></span>
-                    <div>
-                      <p class="text-base font-semibold">Tanvir Ahmed</p>
-                      <p class="text-sm text-primary/60">Managing Director, Orchard Group</p>
-                    </div>
+                  <blockquote class="mt-6 font-display text-2xl font-semibold leading-snug sm:text-3xl">
+                    We built our head office with them. The site stayed safe, the updates came every week and the budget
+                    never moved from the first estimate.
+                  </blockquote>
+                  <figcaption class="mt-8 flex items-center gap-4 text-start">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80"
+                      alt="Tanvir Ahmed" class="size-14 object-cover" />
+                    <span>
+                      <span class="block font-semibold">Tanvir Ahmed</span>
+                      <span class="block text-sm text-primary/60">Managing Director, Orchard Group</span>
+                    </span>
                   </figcaption>
                 </figure>
               </div>
 
               <!-- Slide 3 -->
               <div class="hs-carousel-slide">
-                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
-                  <div>
-                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
-                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
-                    </span>
-                    <blockquote
-                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
-                      From permits to plumbing, one team handled everything. We moved in without a single call to chase
-                      anyone.
-                    </blockquote>
+                <figure class="flex h-full flex-col items-center justify-center px-6 py-10 text-center sm:px-12">
+                  <div class="text-secondary" aria-label="5 out of 5 stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                      class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                   </div>
-                  <figcaption class="flex items-center gap-4">
-                    <span class="h-12 w-1 bg-secondary"></span>
-                    <div>
-                      <p class="text-base font-semibold">Nusrat Jahan</p>
-                      <p class="text-sm text-primary/60">Property owner, Riverside Court</p>
-                    </div>
+                  <blockquote class="mt-6 font-display text-2xl font-semibold leading-snug sm:text-3xl">
+                    From permits to plumbing, one team handled everything. We moved in without a single call to chase
+                    anyone.
+                  </blockquote>
+                  <figcaption class="mt-8 flex items-center gap-4 text-start">
+                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+                      alt="Nusrat Jahan" class="size-14 object-cover" />
+                    <span>
+                      <span class="block font-semibold">Nusrat Jahan</span>
+                      <span class="block text-sm text-primary/60">Property owner, Riverside Court</span>
+                    </span>
                   </figcaption>
                 </figure>
               </div>
@@ -1419,17 +904,11 @@
           </div>
 
           <!-- Controls -->
-          <div class="mt-10 flex items-center gap-6 border-t border-primary/15 pt-8">
-            <div class="flex gap-2">
-              <button type="button" aria-label="Previous testimonial"
-                class="hs-carousel-prev hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
-              </button>
-              <button type="button" aria-label="Next testimonial"
-                class="hs-carousel-next hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
-              </button>
-            </div>
+          <div class="mt-8 flex items-center justify-center gap-6">
+            <button type="button" aria-label="Previous testimonial"
+              class="hs-carousel-prev hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center bg-concrete transition-colors duration-200 hover:bg-secondary">
+              <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
+            </button>
 
             <div class="hs-carousel-pagination flex items-center gap-2">
               <span
@@ -1439,64 +918,82 @@
               <span
                 class="h-1 w-6 cursor-pointer bg-primary/20 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
             </div>
+
+            <button type="button" aria-label="Next testimonial"
+              class="hs-carousel-next hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center bg-concrete transition-colors duration-200 hover:bg-secondary">
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </button>
           </div>
 
         </div>
       </div>
     </section>
-    <!-- CTA -->
-    <section class="bg-secondary py-16 text-primary lg:py-24">
-      <div class="mx-auto grid max-w-350 items-center gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
 
-        <!-- Heading -->
-        <div class="lg:col-span-7">
-          <p class="text-sm font-semibold uppercase tracking-[0.2em]">Start your project</p>
-          <h2
-            class="mt-4 font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
-            Have a plot? Let's build.
-          </h2>
-        </div>
 
-        <!-- Form -->
-        <div class="lg:col-span-5">
-          <p class="max-w-md text-base leading-7 text-primary/80">
-            Leave your phone number and our team will call you back to talk through your plot, budget and timeline.
-          </p>
-
-          <form action="#" method="post" class="mt-6">
-            <div class="flex flex-col sm:flex-row">
-              <label for="cta-phone" class="sr-only">Phone number</label>
-              <input type="tel" id="cta-phone" name="phone" required autocomplete="tel" placeholder="Your phone number"
-                class="w-full border-2 border-primary bg-transparent px-5 py-4 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/60 focus:bg-white" />
-              <button type="submit"
-                class="group relative inline-flex shrink-0 items-center justify-center gap-3 overflow-hidden border-2 border-primary bg-primary px-8 py-4 text-sm font-semibold text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
-                <span class="relative">Call me back</span>
-                <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-                  aria-hidden="true"></i>
-              </button>
-            </div>
-            <p class="mt-3 text-xs text-primary/70">We usually respond within one working day.</p>
-          </form>
-        </div>
-
-      </div>
-    </section>
 
   </main>
 
+  <!-- CTA  -->
+  <div class="relative z-50 mx-auto -mb-16 max-w-7xl px-4 sm:-mb-20 sm:px-6 lg:-mb-28 lg:px-8">
+    <div class="grid items-center gap-10 bg-secondary p-8 sm:p-12 lg:grid-cols-12 lg:gap-16 lg:p-16">
+
+      <!-- Content -->
+      <div class="lg:col-span-7">
+        <p
+          class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] before:h-0.5 before:w-8 before:bg-primary after:h-0.5 after:w-8 after:bg-primary">
+          Start Your Project</p>
+        <h2 class="mt-4 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+          Have a plot? Let's build.
+        </h2>
+
+        <p class="mt-5 max-w-xl text-base leading-8 text-primary/80">
+          Tell us about your plot, budget and timeline. Our team will get back to you within one working day.
+        </p>
+      </div>
+
+      <!-- Actions -->
+      <div class="lg:col-span-5">
+        <a href="tel:+8801700000000" class="group flex items-center gap-4">
+          <span class="flex size-14 shrink-0 items-center justify-center bg-primary text-secondary">
+            <i class="fa-solid fa-phone text-lg" aria-hidden="true"></i>
+          </span>
+          <span>
+            <span class="block text-xs font-semibold uppercase tracking-[0.15em]">Call us anytime</span>
+            <span class="block font-display text-3xl font-bold leading-tight group-hover:underline sm:text-4xl">+880
+              1700 000 000</span>
+          </span>
+        </a>
+
+        <a href="./pages/contact.html"
+          class="group mt-8 inline-flex items-center gap-3 bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-white transition-colors duration-300 hover:bg-white hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+          Request a quote
+          <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+            aria-hidden="true"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-primary text-white">
-    <div class="mx-auto max-w-350 px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20">
+    <div class="mx-auto max-w-7xl px-4 pt-32 sm:px-6 sm:pt-36 lg:px-8 lg:pt-48">
 
       <div class="grid gap-12 lg:grid-cols-12 lg:gap-10">
 
         <!-- Brand -->
         <div class="lg:col-span-4">
-          <a href="./index.html" aria-label="Bhitti home" class="inline-flex items-center gap-3">
-            <span
-              class="flex size-11 items-center justify-center bg-secondary font-display text-3xl font-extrabold leading-none text-primary">B</span>
-            <span class="font-display text-3xl font-bold uppercase leading-none tracking-[0.14em]">Bhitti</span>
+          <!-- Logo -->
+          <a href="./index.html" aria-label="Bhitti home"
+            class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
+            <span class="flex size-11 items-center justify-center bg-secondary text-white">
+              <i class="fa-solid fa-building text-xl" aria-hidden="true"></i>
+            </span>
+            <span class="leading-none">
+              <span class="block font-display text-2xl font-bold uppercase tracking-[0.14em]">Bhitti</span>
+              <span class="mt-1 block text-[10px] font-semibold uppercase tracking-[0.22em] text-white">Built on
+                trust</span>
+            </span>
           </a>
           <p class="mt-6 max-w-sm text-sm leading-7 text-white/60">
             Builders and developers delivering homes and commercial spaces across Dhaka, on time and to standard.
