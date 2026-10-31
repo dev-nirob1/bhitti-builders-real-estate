@@ -17,3 +17,9 @@
     to { transform: translateX(-50%); }
   }
 }
+.project-filter:has(#f-residential:checked) [data-project]:not([data-type~="residential"]),
+.project-filter:has(#f-commercial:checked)  [data-project]:not([data-type~="commercial"]),
+.project-filter:has(#f-ongoing:checked)     [data-project]:not([data-type~="ongoing"]),
+.project-filter:has(#f-completed:checked)   [data-project]:not([data-type~="completed"]) {
+  display: none;
+}
