@@ -1389,6 +1389,9 @@
   .pt-14 {
     padding-top: calc(var(--spacing) * 14);
   }
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
   .pt-24 {
     padding-top: calc(var(--spacing) * 24);
   }
@@ -2110,6 +2113,9 @@
     .hover\:text-white:hover {
       color: var(--color-white);
     }
+    .hover\:underline:hover {
+      text-decoration-line: underline;
+    }
     .hover\:opacity-100:hover {
       opacity: 100%;
     }
@@ -2284,6 +2290,10 @@
     }
     .sm\:pt-36 {
       padding-top: calc(var(--spacing) * 36);
+    }
+    .sm\:text-2xl {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
     .sm\:text-3xl {
       font-size: var(--text-3xl);
@@ -2489,6 +2499,9 @@
     .lg\:gap-10 {
       gap: calc(var(--spacing) * 10);
     }
+    .lg\:gap-12 {
+      gap: calc(var(--spacing) * 12);
+    }
     .lg\:gap-16 {
       gap: calc(var(--spacing) * 16);
     }
@@ -2605,6 +2618,9 @@
     }
     .lg\:pt-20 {
       padding-top: calc(var(--spacing) * 20);
+    }
+    .lg\:pt-24 {
+      padding-top: calc(var(--spacing) * 24);
     }
     .lg\:pt-48 {
       padding-top: calc(var(--spacing) * 48);
@@ -2825,6 +2841,27 @@
   }
   .hs-accordion.active .hs-accordion-active\:hidden.hs-accordion-force-active {
     display: none;
+  }
+  .hs-accordion-active\:border-primary.hs-accordion.active {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active > .hs-accordion-active\:border-primary {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active > .hs-accordion-toggle .hs-accordion-active\:border-primary {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active > .hs-accordion-heading > .hs-accordion-toggle .hs-accordion-active\:border-primary {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active > .hs-accordion-active\:border-primary.hs-accordion-toggle {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active > .hs-accordion-heading > .hs-accordion-active\:border-primary.hs-accordion-toggle {
+    border-color: var(--color-primary);
+  }
+  .hs-accordion.active .hs-accordion-active\:border-primary.hs-accordion-force-active {
+    border-color: var(--color-primary);
   }
   .hs-collapse-open\:block.hs-collapse.open {
     display: block;
