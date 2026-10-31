@@ -2,377 +2,1630 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bhitti | Builders</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./assets/css/output.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhitti | Builders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
 </head>
 
-<body id="top" class="bg-paper font-sans text-primary antialiased">
-    <!-- Navbar -->
-    <header class="sticky top-0 z-50 border-b border-white/10 bg-primary text-white">
-        <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-            <div class="flex h-20 items-center justify-between">
+<body class="bg-paper font-sans text-primary antialiased">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 border-b border-primary/10 bg-white text-primary">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-20 items-center justify-between">
 
-                <!-- Logo -->
-                <a href="./index.html" aria-label="Bhitti home"
-                    class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
-                    <span
-                        class="flex size-10 items-center justify-center bg-secondary font-display text-2xl font-extrabold leading-none text-primary">B</span>
-                    <span class="font-display text-2xl font-bold uppercase leading-none tracking-[0.14em]">Bhitti</span>
-                </a>
+        <!-- Logo -->
+        <a href="./index.html" aria-label="Bhitti home"
+          class="flex items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary">
+          <span class="flex size-11 items-center justify-center bg-secondary text-primary">
+            <i class="fa-solid fa-building text-xl" aria-hidden="true"></i>
+          </span>
+          <span class="leading-none">
+            <span class="block font-display text-2xl font-bold uppercase tracking-[0.14em]">Bhitti</span>
+            <span class="mt-1 block text-[10px] font-semibold uppercase tracking-[0.22em] text-primary/60">Built on
+              trust</span>
+          </span>
+        </a>
 
-                <!-- Desktop menu -->
-                <nav class="hidden lg:block" aria-label="Main">
-                    <ul class="flex items-center gap-9 text-sm font-medium uppercase tracking-[0.12em]">
-                        <li><a href="./index.html" aria-current="page"
-                                class="text-white/70 transition-colors duration-200 hover:text-white aria-[current=page]:text-secondary">Home</a>
-                        </li>
-                        <li><a href="./pages/about.html"
-                                class="text-white/70 transition-colors duration-200 hover:text-white">About</a></li>
-                        <li><a href="./pages/services.html"
-                                class="text-white/70 transition-colors duration-200 hover:text-white">Services</a></li>
-                        <li><a href="./pages/projects.html"
-                                class="text-white/70 transition-colors duration-200 hover:text-white">Projects</a></li>
-                        <li><a href="./pages/contact.html"
-                                class="text-white/70 transition-colors duration-200 hover:text-white">Contact</a></li>
-                    </ul>
-                </nav>
+        <!-- Desktop menu -->
+        <nav class="hidden lg:block" aria-label="Main">
+          <ul class="flex items-center gap-9 text-sm font-medium uppercase tracking-[0.12em]">
+            <li><a href="./index.html" aria-current="page"
+                class="relative block py-2 text-primary/70 transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100 aria-[current=page]:font-semibold aria-[current=page]:text-primary aria-[current=page]:after:scale-x-100">Home</a>
+            </li>
+            <li><a href="./pages/about.html"
+                class="relative block py-2 text-primary/70 transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100">About</a>
+            </li>
+            <li><a href="./pages/services.html"
+                class="relative block py-2 text-primary/70 transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100">Services</a>
+            </li>
+            <li><a href="./pages/projects.html"
+                class="relative block py-2 text-primary/70 transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100">Projects</a>
+            </li>
+            <li><a href="./pages/contact.html"
+                class="relative block py-2 text-primary/70 transition-colors duration-200 after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-secondary after:transition-transform after:duration-300 hover:text-primary hover:after:scale-x-100">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-                <!-- Right -->
-                <div class="flex items-center gap-3">
-                    <a href="./pages/contact.html"
-                        class="group relative hidden items-center overflow-hidden bg-secondary px-6 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-primary [clip-path:polygon(0_0,calc(100%-12px)_0,100%_12px,100%_100%,0_100%)] before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white sm:inline-flex">
-                        <span class="relative">Get a Quote</span>
-                    </a>
+        <!-- Right -->
+        <div class="flex items-center gap-3">
+          <a href="tel:+8801700000000" aria-label="Call us"
+            class="group hidden items-center gap-3 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-secondary sm:inline-flex">
+            <span
+              class="flex size-11 items-center justify-center bg-secondary text-primary transition-colors duration-300 group-hover:bg-primary group-hover:text-secondary">
+              <i class="fa-solid fa-phone text-sm" aria-hidden="true"></i>
+            </span>
+            <span class="leading-tight">
+              <span class="block text-xs font-medium uppercase tracking-[0.15em] text-primary/60">Call us</span>
+              <span class="block font-display text-xl font-bold tracking-wide">+880 1700 000 000</span>
+            </span>
+          </a>
 
-                    <!-- Mobile toggle (Preline collapse) -->
-                    <button type="button" id="hs-nav-toggle" aria-label="Toggle menu" aria-expanded="false"
-                        aria-controls="hs-nav-collapse" data-hs-collapse="#hs-nav-collapse"
-                        class="hs-collapse-toggle flex size-11 items-center justify-center border border-white/20 transition-colors hover:border-secondary lg:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
-                        <i class="fa-solid fa-bars hs-collapse-open:hidden" aria-hidden="true"></i>
-                        <i class="fa-solid fa-xmark hidden hs-collapse-open:block" aria-hidden="true"></i>
-                    </button>
-                </div>
-
-            </div>
+          <!-- Mobile toggle (Preline collapse) -->
+          <button type="button" id="hs-nav-toggle" aria-label="Toggle menu" aria-expanded="false"
+            aria-controls="hs-nav-collapse" data-hs-collapse="#hs-nav-collapse"
+            class="hs-collapse-toggle flex size-11 items-center justify-center border border-primary/20 text-primary transition-colors hover:border-secondary lg:hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+            <span class="block hs-collapse-open:hidden"><i class="fa-solid fa-bars" aria-hidden="true"></i></span>
+            <span class="hidden hs-collapse-open:block"><i class="fa-solid fa-xmark" aria-hidden="true"></i></span>
+          </button>
         </div>
 
-        <!-- Mobile menu -->
-        <div id="hs-nav-collapse"
-            class="hs-collapse hidden w-full overflow-hidden transition-all duration-300 lg:hidden"
-            aria-labelledby="hs-nav-toggle">
-            <nav class="mx-auto max-w-350 border-t border-white/10 px-4 pb-6 pt-2 sm:px-6" aria-label="Mobile">
-                <ul class="divide-y divide-white/10 text-sm font-medium uppercase tracking-[0.12em]">
-                    <li><a href="./index.html" aria-current="page"
-                            class="block py-4 text-white/70 hover:text-white aria-[current=page]:text-secondary">Home</a>
-                    </li>
-                    <li><a href="./pages/about.html" class="block py-4 text-white/70 hover:text-white">About</a></li>
-                    <li><a href="./pages/services.html" class="block py-4 text-white/70 hover:text-white">Services</a>
-                    </li>
-                    <li><a href="./pages/projects.html" class="block py-4 text-white/70 hover:text-white">Projects</a>
-                    </li>
-                    <li><a href="./pages/contact.html" class="block py-4 text-white/70 hover:text-white">Contact</a>
-                    </li>
-                </ul>
-                <a href="./pages/contact.html"
-                    class="mt-4 flex w-full items-center justify-center bg-secondary px-6 py-4 text-sm font-semibold uppercase tracking-[0.12em] text-primary transition-colors hover:bg-concrete">
-                    Get a Quote
-                </a>
-            </nav>
-        </div>
-    </header>
+      </div>
+    </div>
 
+    <!-- Mobile menu -->
+    <div id="hs-nav-collapse"
+      class="hs-collapse hidden w-full overflow-hidden bg-white transition-all duration-300 lg:hidden"
+      aria-labelledby="hs-nav-toggle">
+      <nav class="mx-auto max-w-350 border-t border-primary/10 px-4 pb-6 pt-2 sm:px-6" aria-label="Mobile">
+        <ul class="divide-y divide-primary/10 text-sm font-medium uppercase tracking-[0.12em]">
+          <li><a href="./index.html" aria-current="page"
+              class="block py-4 text-primary/70 hover:text-primary aria-[current=page]:font-semibold aria-[current=page]:text-primary">Home</a>
+          </li>
+          <li><a href="./pages/about.html" class="block py-4 text-primary/70 hover:text-primary">About</a></li>
+          <li><a href="./pages/services.html" class="block py-4 text-primary/70 hover:text-primary">Services</a></li>
+          <li><a href="./pages/projects.html" class="block py-4 text-primary/70 hover:text-primary">Projects</a></li>
+          <li><a href="./pages/contact.html" class="block py-4 text-primary/70 hover:text-primary">Contact</a></li>
+        </ul>
+        <a href="tel:+8801700000000"
+          class="mt-4 flex w-full items-center justify-center gap-3 bg-secondary px-6 py-4 text-sm font-semibold tracking-[0.12em] text-primary transition-colors hover:bg-primary hover:text-white">
+          <i class="fa-solid fa-phone text-xs" aria-hidden="true"></i>
+          +880 1700 000 000
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- Hero Section-->
+    <section class="bg-white text-primary">
 
-    <main>
-        <!-- Hero -->
-        <section class="bg-primary text-white">
+      <!-- Carousel  -->
+      <div data-hs-carousel='{"loadingClasses": "opacity-0", "isAutoPlay": true, "isInfiniteLoop": true, "speed": 6000}'
+        class="relative">
 
-            <!-- Carousel (Preline, no custom JS) -->
-            <div data-hs-carousel='{"loadingClasses": "opacity-0", "isAutoPlay": true, "isInfiniteLoop": true, "speed": 6000}'
-                class="relative">
+        <div class="hs-carousel relative min-h-[max(560px,calc(100svh-11rem))] w-full overflow-hidden bg-white">
+          <div
+            class="hs-carousel-body absolute bottom-0 start-0 top-0 flex flex-nowrap opacity-0 transition-transform duration-700 ease-out">
 
+            <!-- Slide 1 -->
+            <div class="hs-carousel-slide">
+              <div class="relative h-full">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=80"
+                  alt="Construction site with steel framework" class="absolute inset-0 size-full object-cover" />
                 <div
-                    class="hs-carousel relative min-h-[max(560px,calc(100svh-11rem))] w-full overflow-hidden bg-primary">
-                    <div
-                        class="hs-carousel-body absolute bottom-0 start-0 top-0 flex flex-nowrap opacity-0 transition-transform duration-700 ease-out">
-
-                        <!-- Slide 1 -->
-                        <div class="hs-carousel-slide">
-                            <div class="relative h-full">
-                                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=80"
-                                    alt="Construction site with steel framework"
-                                    class="absolute inset-0 size-full object-cover" />
-                                <div
-                                    class="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/65 to-primary/25">
-                                </div>
-
-                                <div
-                                    class="relative z-10 mx-auto flex h-full max-w-350 items-center px-4 sm:px-6 lg:px-8">
-                                    <div class="max-w-2xl py-20 pb-32">
-                                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
-                                            Builders &amp; Developers</p>
-                                        <h1
-                                            class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
-                                            We build what lasts
-                                        </h1>
-                                        <p class="mt-6 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
-                                            Residential and commercial construction delivered with honest pricing,
-                                            certified materials and a
-                                            handover date we actually keep.
-                                        </p>
-                                        <div class="mt-9 flex flex-wrap items-center gap-3">
-                                            <a href="./pages/contact.html"
-                                                class="group relative inline-flex items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100">
-                                                <span class="relative">Get a Quote</span>
-                                                <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-                                                    aria-hidden="true"></i>
-                                            </a>
-                                            <a href="./pages/projects.html"
-                                                class="inline-flex items-center border border-white/35 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-primary">
-                                                View Projects
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="hs-carousel-slide">
-                            <div class="relative h-full">
-                                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
-                                    alt="Modern glass commercial tower"
-                                    class="absolute inset-0 size-full object-cover" />
-                                <div
-                                    class="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/65 to-primary/25">
-                                </div>
-
-                                <div
-                                    class="relative z-10 mx-auto flex h-full max-w-350 items-center px-4 sm:px-6 lg:px-8">
-                                    <div class="max-w-2xl py-20 pb-32">
-                                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
-                                            Commercial construction</p>
-                                        <h2
-                                            class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
-                                            Spaces that mean business
-                                        </h2>
-                                        <p class="mt-6 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
-                                            Offices, retail and mixed-use buildings engineered for performance, planned
-                                            around your timeline and
-                                            built to pass every inspection.
-                                        </p>
-                                        <div class="mt-9 flex flex-wrap items-center gap-3">
-                                            <a href="./pages/contact.html"
-                                                class="group relative inline-flex items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100">
-                                                <span class="relative">Get a Quote</span>
-                                                <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-                                                    aria-hidden="true"></i>
-                                            </a>
-                                            <a href="./pages/services.html"
-                                                class="inline-flex items-center border border-white/35 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-primary">
-                                                Our Services
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="hs-carousel-slide">
-                            <div class="relative h-full">
-                                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2000&q=80"
-                                    alt="Completed residential apartment building"
-                                    class="absolute inset-0 size-full object-cover" />
-                                <div
-                                    class="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/65 to-primary/25">
-                                </div>
-
-                                <div
-                                    class="relative z-10 mx-auto flex h-full max-w-350 items-center px-4 sm:px-6 lg:px-8">
-                                    <div class="max-w-2xl py-20 pb-32">
-                                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">
-                                            Residential development</p>
-                                        <h2
-                                            class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
-                                            Plot to handover, on time
-                                        </h2>
-                                        <p class="mt-6 max-w-xl text-base leading-8 text-white/75 sm:text-lg">
-                                            From design and approvals to construction and keys in hand, one accountable
-                                            team manages every step
-                                            of your home.
-                                        </p>
-                                        <div class="mt-9 flex flex-wrap items-center gap-3">
-                                            <a href="./pages/contact.html"
-                                                class="group relative inline-flex items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100">
-                                                <span class="relative">Get a Quote</span>
-                                                <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
-                                                    aria-hidden="true"></i>
-                                            </a>
-                                            <a href="./pages/about.html"
-                                                class="inline-flex items-center border border-white/35 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-300 hover:border-white hover:bg-white hover:text-primary">
-                                                About Us
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                  class="absolute inset-0 bg-white/85 lg:bg-transparent lg:bg-linear-to-r lg:from-white lg:from-35% lg:to-transparent lg:to-70%">
                 </div>
 
-                <!-- Controls -->
-                <div class="pointer-events-none absolute inset-x-0 bottom-8 z-20">
-                    <div class="mx-auto flex max-w-350 items-center gap-6 px-4 sm:px-6 lg:px-8">
-
-                        <div class="pointer-events-auto flex gap-2">
-                            <button type="button" aria-label="Previous slide"
-                                class="hs-carousel-prev hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-11 items-center justify-center border border-white/30 text-white transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
-                                <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
-                            </button>
-                            <button type="button" aria-label="Next slide"
-                                class="hs-carousel-next hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-11 items-center justify-center border border-white/30 text-white transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
-                                <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
-                            </button>
-                        </div>
-
-                        <div class="hs-carousel-pagination pointer-events-auto flex items-center gap-2">
-                            <span
-                                class="h-1 w-6 cursor-pointer bg-white/35 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
-                            <span
-                                class="h-1 w-6 cursor-pointer bg-white/35 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
-                            <span
-                                class="h-1 w-6 cursor-pointer bg-white/35 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Stats band -->
-            <div class="bg-secondary text-primary">
-                <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-                    <dl class="grid grid-cols-3 divide-x divide-primary/20">
-                        <div class="px-3 py-6 first:ps-0 sm:px-8 lg:py-8">
-                            <dd class="font-display text-3xl font-bold leading-none sm:text-5xl">15+</dd>
-                            <dt class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Years of
-                                experience</dt>
-                        </div>
-                        <div class="px-3 py-6 sm:px-8 lg:py-8">
-                            <dd class="font-display text-3xl font-bold leading-none sm:text-5xl">120+</dd>
-                            <dt class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Projects
-                                completed</dt>
-                        </div>
-                        <div class="px-3 py-6 last:pe-0 sm:px-8 lg:py-8">
-                            <dd class="font-display text-3xl font-bold leading-none sm:text-5xl">3.5M</dd>
-                            <dt class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Square
-                                feet built</dt>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-
-        </section>
-        <!-- Services -->
-        <section class="bg-paper py-20 text-primary lg:py-28">
-            <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
-                <!-- Heading -->
-                <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-                    <div class="max-w-2xl">
-                        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">What we do</p>
-                        <h2
-                            class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
-                            Our construction services
-                        </h2>
-                    </div>
-                    <p class="max-w-md text-base leading-8 text-primary/70">
-                        One accountable team from first sketch to final handover. Whatever the scale, we plan carefully,
-                        build properly
-                        and keep you informed.
+                <div class="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+                  <div class="max-w-2xl py-20 pb-32">
+                    <p
+                      class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/70 before:h-0.5 before:w-10 before:bg-secondary">
+                      Builders &amp; Developers</p>
+                    <h1
+                      class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
+                      We build what lasts
+                    </h1>
+                    <p class="mt-6 max-w-xl text-base leading-8 text-primary/75 sm:text-lg">
+                      Residential and commercial construction delivered with honest pricing, certified materials and a
+                      handover date we actually keep.
                     </p>
+                    <div class="mt-9 flex flex-wrap items-center gap-3">
+
+                      <a href="./pages/contact.html"
+                        class="group inline-flex items-center gap-3 bg-secondary px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        Get a Quote
+                        <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                          aria-hidden="true"></i>
+                      </a>
+
+                      <a href="./pages/projects.html"
+                        class="group inline-flex items-center gap-3 border border-primary/25 bg-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        View Projects
+                        <i class="fa-solid fa-arrow-right text-xs text-primary/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary"
+                          aria-hidden="true"></i>
+                      </a>
+
+                    </div>
+                  </div>
                 </div>
-
-                <!-- Services: open columns, no cards -->
-                <div class="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
-
-                    <a href="./pages/services.html#residential"
-                        class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-                        <span class="text-sm font-semibold tracking-widest text-primary/40">01</span>
-                        <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Residential</h3>
-                        <p class="mt-4 text-sm leading-7 text-primary/65">
-                            Apartments, duplexes and townhouses built for families who plan to stay.
-                        </p>
-                        <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
-                            Learn more
-                            <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
-                                aria-hidden="true"></i>
-                        </span>
-                    </a>
-
-                    <a href="./pages/services.html#commercial"
-                        class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-                        <span class="text-sm font-semibold tracking-widest text-primary/40">02</span>
-                        <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Commercial</h3>
-                        <p class="mt-4 text-sm leading-7 text-primary/65">
-                            Offices, retail and mixed-use buildings engineered for performance and long-term value.
-                        </p>
-                        <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
-                            Learn more
-                            <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
-                                aria-hidden="true"></i>
-                        </span>
-                    </a>
-
-                    <a href="./pages/services.html#renovation"
-                        class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-                        <span class="text-sm font-semibold tracking-widest text-primary/40">03</span>
-                        <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Renovation</h3>
-                        <p class="mt-4 text-sm leading-7 text-primary/65">
-                            Structural upgrades and full interior makeovers, delivered with minimal disruption.
-                        </p>
-                        <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
-                            Learn more
-                            <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
-                                aria-hidden="true"></i>
-                        </span>
-                    </a>
-
-                    <a href="./pages/services.html#infrastructure"
-                        class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
-                        <span class="text-sm font-semibold tracking-widest text-primary/40">04</span>
-                        <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Infrastructure</h3>
-                        <p class="mt-4 text-sm leading-7 text-primary/65">
-                            Roads, drainage and utility works built to municipal standards and designed to last.
-                        </p>
-                        <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
-                            Learn more
-                            <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
-                                aria-hidden="true"></i>
-                        </span>
-                    </a>
-
-                </div>
+              </div>
             </div>
-        </section>
+
+            <!-- Slide 2 -->
+            <div class="hs-carousel-slide">
+              <div class="relative h-full">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80"
+                  alt="Modern glass commercial tower" class="absolute inset-0 size-full object-cover" />
+                <div
+                  class="absolute inset-0 bg-white/85 lg:bg-transparent lg:bg-linear-to-r lg:from-white lg:from-35% lg:to-transparent lg:to-70%">
+                </div>
+                <div class="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+                  <div class="max-w-2xl py-20 pb-32">
+                    <p
+                      class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/70 before:h-0.5 before:w-10 before:bg-secondary">
+                      Commercial construction</p>
+                    <h2
+                      class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
+                      Spaces that mean business
+                    </h2>
+                    <p class="mt-6 max-w-xl text-base leading-8 text-primary/75 sm:text-lg">
+                      Offices, retail and mixed-use buildings engineered for performance, planned around your timeline
+                      and
+                      built to pass every inspection.
+                    </p>
+                    <div class="mt-9 flex flex-wrap items-center gap-3">
+
+                      <a href="./pages/contact.html"
+                        class="group inline-flex items-center gap-3 bg-secondary px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        Get a Quote
+                        <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                          aria-hidden="true"></i>
+                      </a>
+
+                      <a href="./pages/projects.html"
+                        class="group inline-flex items-center gap-3 border border-primary/25 bg-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        View Projects
+                        <i class="fa-solid fa-arrow-right text-xs text-primary/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary"
+                          aria-hidden="true"></i>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="hs-carousel-slide">
+              <div class="relative h-full">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=2000&q=80"
+                  alt="Completed residential apartment building" class="absolute inset-0 size-full object-cover" />
+                <div
+                  class="absolute inset-0 bg-white/85 lg:bg-transparent lg:bg-linear-to-r lg:from-white lg:from-35% lg:to-transparent lg:to-70%">
+                </div>
+
+                <div class="relative z-10 mx-auto flex h-full max-w-7xl items-center px-4 sm:px-6 lg:px-8">
+                  <div class="max-w-2xl py-20 pb-32">
+                    <p
+                      class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/70 before:h-0.5 before:w-10 before:bg-secondary">
+                      Residential development</p>
+                    <h2
+                      class="mt-4 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
+                      Plot to handover, on time
+                    </h2>
+                    <p class="mt-6 max-w-xl text-base leading-8 text-primary/75 sm:text-lg">
+                      From design and approvals to construction and keys in hand, one accountable team manages every
+                      step
+                      of your home.
+                    </p>
+                    <div class="mt-9 flex flex-wrap items-center gap-3">
+
+                      <a href="./pages/contact.html"
+                        class="group inline-flex items-center gap-3 bg-secondary px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        Get a Quote
+                        <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+                          aria-hidden="true"></i>
+                      </a>
+
+                      <a href="./pages/projects.html"
+                        class="group inline-flex items-center gap-3 border border-primary/25 bg-white/70 px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                        View Projects
+                        <i class="fa-solid fa-arrow-right text-xs text-primary/40 transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary"
+                          aria-hidden="true"></i>
+                      </a>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="pointer-events-none absolute inset-x-0 bottom-8 z-20">
+          <div class="mx-auto flex max-w-7xl items-center gap-6 px-4 sm:px-6 lg:px-8">
+
+            <div class="pointer-events-auto flex gap-2">
+              <button type="button" aria-label="Previous slide"
+                class="hs-carousel-prev hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
+              </button>
+              <button type="button" aria-label="Next slide"
+                class="hs-carousel-next hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-11 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary">
+                <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+              </button>
+            </div>
 
 
+          </div>
+        </div>
+      </div>
 
-    </main>
+      <!-- Quick facts band -->
+      <div class="bg-secondary text-primary">
+        <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+          <ul class="grid grid-cols-3 divide-x divide-primary/20">
+            <li class="px-3 py-6 first:ps-0 sm:px-8 lg:py-8">
+              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">15+</p>
+              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Years of experience</p>
+            </li>
+            <li class="px-3 py-6 sm:px-8 lg:py-8">
+              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">120+</p>
+              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Projects completed</p>
+            </li>
+            <li class="px-3 py-6 last:pe-0 sm:px-8 lg:py-8">
+              <p class="font-display text-3xl font-bold leading-none sm:text-5xl">3.5M</p>
+              <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.15em] sm:text-xs">Square feet built</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Services -->
+    <section class="bg-paper py-20 text-primary lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">What we do</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              Our construction services
+            </h2>
+          </div>
+          <p class="max-w-md text-base leading-8 text-primary/70">
+            One accountable team from first sketch to final handover. Whatever the scale, we plan carefully,
+            build properly
+            and keep you informed.
+          </p>
+        </div>
+
+        <!-- Services: open columns, no cards -->
+        <div class="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-4">
+
+          <a href="./pages/services.html#residential"
+            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
+            <span class="text-sm font-semibold tracking-widest text-primary/40">01</span>
+            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Residential</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65">
+              Apartments, duplexes and townhouses built for families who plan to stay.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+              Learn more
+              <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
+                aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <a href="./pages/services.html#commercial"
+            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
+            <span class="text-sm font-semibold tracking-widest text-primary/40">02</span>
+            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Commercial</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65">
+              Offices, retail and mixed-use buildings engineered for performance and long-term value.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+              Learn more
+              <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
+                aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <a href="./pages/services.html#renovation"
+            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
+            <span class="text-sm font-semibold tracking-widest text-primary/40">03</span>
+            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Renovation</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65">
+              Structural upgrades and full interior makeovers, delivered with minimal disruption.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+              Learn more
+              <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
+                aria-hidden="true"></i>
+            </span>
+          </a>
+
+          <a href="./pages/services.html#infrastructure"
+            class="group block border-t-2 border-primary/15 pt-6 transition-colors duration-300 hover:border-secondary">
+            <span class="text-sm font-semibold tracking-widest text-primary/40">04</span>
+            <h3 class="mt-4 font-display text-3xl font-bold uppercase leading-none">Infrastructure</h3>
+            <p class="mt-4 text-sm leading-7 text-primary/65">
+              Roads, drainage and utility works built to municipal standards and designed to last.
+            </p>
+            <span class="mt-6 inline-flex items-center gap-2 text-sm font-semibold">
+              Learn more
+              <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1.5"
+                aria-hidden="true"></i>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="bg-concrete py-20 text-primary lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p
+              class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/60 before:h-0.5 before:w-10 before:bg-secondary">
+              Featured projects</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              Our recent work
+            </h2>
+          </div>
+          <a href="./pages/projects.html"
+            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-primary before:transition-transform before:duration-300 hover:text-white hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            <span class="relative">View all projects</span>
+            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Asymmetric layout: one large project, two stacked -->
+        <div class="mt-14 grid gap-6 lg:h-190 lg:grid-cols-12 lg:grid-rows-2">
+
+          <!-- Project 1 (large) -->
+          <article class="min-h-120 lg:col-span-7 lg:row-span-2 lg:min-h-0">
+            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
+                alt="Bhitti Heights apartment building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6 lg:p-8">
+                  <h3
+                    class="font-display text-4xl font-bold uppercase leading-none tracking-wide sm:text-5xl lg:text-6xl">
+                    Bhitti Heights</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">48 units</p>
+                  </li>
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">1,200+ sqft</p>
+                  </li>
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">2024</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
+            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                alt="Orchard Tower commercial building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6">
+                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Orchard
+                    Tower</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">14 floors</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">85,000 sqft</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Dec 2026</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
+            <a href="./pages/project-details.html" class="group relative block size-full overflow-hidden bg-white">
+              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
+                alt="Lakeview Residence apartment building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6">
+                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Lakeview
+                    Residence</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">36 units</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">1,350+ sqft</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Jun 2027</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="bg-primary py-20 text-white lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              Our recent work
+            </h2>
+          </div>
+          <a href="./pages/projects.html"
+            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100">
+            <span class="relative">View all projects</span>
+            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- List -->
+        <div class="mt-14">
+
+          <!-- Column labels (desktop) -->
+          <div
+            class="hidden border-b border-white/30 px-4 pb-4 text-xs font-semibold uppercase tracking-[0.15em] text-white/50 lg:grid lg:grid-cols-12 lg:gap-6">
+            <span class="col-span-5">Project</span>
+            <span class="col-span-2">Location</span>
+            <span class="col-span-2">Type</span>
+            <span class="col-span-1">Year</span>
+            <span class="col-span-2">Status</span>
+          </div>
+
+          <ul>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Bhitti Heights</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Dhanmondi, Dhaka</span>
+                  <span class="lg:col-span-2">Residential</span>
+                  <span class="lg:col-span-1">2024</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-white/50"></span>Completed</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"
+                    alt="Bhitti Heights" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Bhitti Plaza</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Gulshan, Dhaka</span>
+                  <span class="lg:col-span-2">Commercial</span>
+                  <span class="lg:col-span-1">2025</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-white/50"></span>Completed</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
+                    alt="Bhitti Plaza" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Lakeview Residence</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Uttara, Dhaka</span>
+                  <span class="lg:col-span-2">Residential</span>
+                  <span class="lg:col-span-1">2026</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-secondary"></span>Ongoing</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80"
+                    alt="Lakeview Residence" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img
+                    src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Orchard Tower</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Banani, Dhaka</span>
+                  <span class="lg:col-span-2">Commercial</span>
+                  <span class="lg:col-span-1">2026</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-secondary"></span>Ongoing</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80"
+                    alt="Orchard Tower" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img
+                    src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Riverside Court</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Bashundhara, Dhaka</span>
+                  <span class="lg:col-span-2">Residential</span>
+                  <span class="lg:col-span-1">2023</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-white/50"></span>Completed</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80"
+                    alt="Riverside Court" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img
+                    src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+            <li class="border-b border-white/15">
+              <a href="./pages/project-details.html"
+                class="group relative block py-7 transition-colors duration-300 hover:bg-white/5 lg:grid lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-4">
+                <h3
+                  class="font-display text-3xl font-bold uppercase leading-none transition-colors duration-300 group-hover:text-secondary sm:text-4xl lg:col-span-5 lg:text-5xl">
+                  Green Road Drainage</h3>
+                <div class="mt-3 flex flex-wrap gap-x-6 gap-y-1 text-sm text-white/65 lg:mt-0 lg:contents">
+                  <span class="lg:col-span-2">Mirpur, Dhaka</span>
+                  <span class="lg:col-span-2">Infrastructure</span>
+                  <span class="lg:col-span-1">2022</span>
+                  <span class="flex items-center gap-2 lg:col-span-2"><span
+                      class="size-2 bg-white/50"></span>Completed</span>
+                </div>
+                <div class="mt-5 aspect-video overflow-hidden lg:hidden">
+                  <img
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1000&q=80"
+                    alt="Green Road Drainage" loading="lazy" class="size-full object-cover" />
+                </div>
+                <div
+                  class="pointer-events-none absolute right-[22%] top-1/2 z-10 hidden aspect-4/3 w-72 -translate-y-1/2 scale-95 overflow-hidden opacity-0 shadow-2xl transition-all duration-300 group-hover:scale-100 group-hover:opacity-100 lg:block">
+                  <img
+                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
+                    alt="" loading="lazy" class="size-full object-cover" />
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <!-- Numbers -->
+    <section class="bg-secondary py-16 text-primary lg:py-20">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <h2 class="max-w-xl font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl">
+            Numbers that speak for our work
+          </h2>
+          <p class="max-w-sm text-sm leading-7 text-primary/75">
+            Every figure below is a family housed, a site delivered or a promise kept.
+          </p>
+        </div>
+
+        <dl class="mt-12 grid grid-cols-2 gap-y-10 border-t-2 border-primary pt-10 lg:grid-cols-4 lg:gap-y-0">
+
+          <div class="pe-6 lg:pe-8">
+            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">2,500+</dd>
+            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Families housed</dt>
+            <p class="mt-2 text-sm leading-6 text-primary/70">Homes handed over across Dhaka.</p>
+          </div>
+
+          <div class="border-primary/25 ps-6 lg:border-s lg:ps-8 lg:pe-8">
+            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">350+</dd>
+            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Team members</dt>
+            <p class="mt-2 text-sm leading-6 text-primary/70">Engineers, architects and skilled crew.</p>
+          </div>
+
+          <div class="pe-6 lg:border-s lg:border-primary/25 lg:ps-8 lg:pe-8">
+            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">96%</dd>
+            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">On-time handover</dt>
+            <p class="mt-2 text-sm leading-6 text-primary/70">Projects delivered on the agreed date.</p>
+          </div>
+
+          <div class="border-primary/25 ps-6 lg:border-s lg:ps-8">
+            <dd class="font-display text-6xl font-bold leading-none tracking-tight lg:text-7xl">12</dd>
+            <dt class="mt-4 text-sm font-semibold uppercase tracking-[0.15em]">Active sites</dt>
+            <p class="mt-2 text-sm leading-6 text-primary/70">Buildings under construction right now.</p>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+    <!-- Quality and safety -->
+    <section class="bg-concrete py-20 text-primary lg:py-28">
+      <div class="mx-auto grid max-w-350 items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
+
+        <!-- Image with hard yellow offset -->
+        <div class="relative mb-5 me-5 lg:mb-7 lg:me-7">
+          <div class="absolute left-5 top-5 size-full bg-secondary lg:left-7 lg:top-7" aria-hidden="true"></div>
+          <div class="relative aspect-4/5 overflow-hidden bg-white">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+              alt="Site engineers inspecting construction work" loading="lazy" class="size-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p
+            class="flex items-center gap-4 text-sm font-semibold uppercase tracking-[0.2em] text-primary/60 before:h-0.5 before:w-10 before:bg-secondary">
+            Quality and safety</p>
+          <h2
+            class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            Built right, built safe
+          </h2>
+          <p class="mt-6 max-w-xl text-base leading-8 text-primary/70">
+            Every site follows the same strict standards, from the materials we order to the way our crews work each
+            day.
+          </p>
+
+          <ul class="mt-10 border-t border-primary/15">
+            <li class="flex gap-5 border-b border-primary/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Safety record</h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Daily site briefings, protective gear and trained
+                  supervisors on every project.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-primary/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Certified materials
+                </h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Cement, steel and fittings sourced from approved
+                  suppliers and tested before use.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-primary/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">On-time handover</h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">A clear schedule from day one, with progress updates
+                  until the keys are in your hand.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-primary/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Structural warranty
+                </h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Written warranty on structure and finishes, with a team
+                  ready to respond after handover.</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Certifications -->
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <p class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">Certified and compliant
+            </p>
+            <ul class="flex flex-wrap gap-2">
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                ISO 9001</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                ISO 45001</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                REHAB Member</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                BNBC Compliant</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Quality and safety -->
+    <section class="bg-primary py-20 text-white lg:py-28">
+      <div class="mx-auto grid max-w-350 items-center gap-16 px-4 sm:px-6 lg:grid-cols-2 lg:gap-24 lg:px-8">
+
+        <!-- Image with hard yellow offset -->
+        <div class="relative mb-5 me-5 lg:mb-7 lg:me-7">
+          <div class="absolute left-5 top-5 size-full bg-secondary lg:left-7 lg:top-7" aria-hidden="true"></div>
+          <div class="relative aspect-4/5 overflow-hidden bg-primary-light">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80"
+              alt="Site engineers inspecting construction work" loading="lazy" class="size-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Quality and safety</p>
+          <h2
+            class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+            Built right, built safe
+          </h2>
+          <p class="mt-6 max-w-xl text-base leading-8 text-white/65">
+            Every site follows the same strict standards, from the materials we order to the way our crews work each
+            day.
+          </p>
+
+          <ul class="mt-10 border-t border-white/15">
+            <li class="flex gap-5 border-b border-white/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Safety record</h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Daily site briefings, protective gear and trained
+                  supervisors on every project.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-white/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Certified materials
+                </h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Cement, steel and fittings sourced from approved
+                  suppliers and tested before use.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-white/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">On-time handover</h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">A clear schedule from day one, with progress updates
+                  until the keys are in your hand.</p>
+              </div>
+            </li>
+            <li class="flex gap-5 border-b border-white/15 py-6">
+              <span class="mt-2 size-3 shrink-0 bg-secondary"></span>
+              <div>
+                <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Structural warranty
+                </h3>
+                <p class="mt-2 text-sm leading-7 text-white/60">Written warranty on structure and finishes, with a team
+                  ready to respond after handover.</p>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Certifications -->
+          <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <p class="shrink-0 text-xs font-semibold uppercase tracking-[0.2em] text-white/50">Certified and compliant
+            </p>
+            <ul class="flex flex-wrap gap-2">
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                ISO 9001</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                ISO 45001</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                REHAB Member</li>
+              <li
+                class="border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white/80">
+                BNBC Compliant</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Featured projects -->
+    <section class="bg-primary py-20 text-white lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              Our recent work
+            </h2>
+          </div>
+          <a href="./pages/projects.html"
+            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <span class="relative">View all projects</span>
+            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Asymmetric layout: one large project, two stacked -->
+        <div class="mt-14 grid gap-6 lg:h-190 lg:grid-cols-12 lg:grid-rows-2">
+
+          <!-- Project 1 (large) -->
+          <article class="min-h-120 lg:col-span-7 lg:row-span-2 lg:min-h-0">
+            <a href="./pages/project-details.html"
+              class="group relative block size-full overflow-hidden bg-primary-light">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=80"
+                alt="Bhitti Heights apartment building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6 lg:p-8">
+                  <h3
+                    class="font-display text-4xl font-bold uppercase leading-none tracking-wide sm:text-5xl lg:text-6xl">
+                    Bhitti Heights</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">48 units</p>
+                  </li>
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">1,200+ sqft</p>
+                  </li>
+                  <li class="px-5 py-4 lg:px-8">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-1 font-display text-xl font-bold uppercase lg:text-2xl">2024</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
+            <a href="./pages/project-details.html"
+              class="group relative block size-full overflow-hidden bg-primary-light">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80"
+                alt="Orchard Tower commercial building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6">
+                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Orchard
+                    Tower</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">14 floors</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">85,000 sqft</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Dec 2026</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="min-h-100 lg:col-span-5 lg:min-h-0">
+            <a href="./pages/project-details.html"
+              class="group relative block size-full overflow-hidden bg-primary-light">
+              <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
+                alt="Lakeview Residence apartment building" loading="lazy"
+                class="absolute inset-0 size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div class="absolute inset-0 bg-linear-to-t from-primary via-primary/30 to-transparent"></div>
+
+              <div class="absolute left-5 top-5 flex gap-2">
+                <span
+                  class="bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <span
+                class="absolute right-5 top-5 flex size-11 translate-y-1 items-center justify-center bg-white text-primary opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                <i class="fa-solid fa-arrow-up-right-from-square text-sm" aria-hidden="true"></i>
+              </span>
+
+              <div class="absolute inset-x-0 bottom-0">
+                <div class="p-6">
+                  <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:text-4xl">Lakeview
+                    Residence</h3>
+                  <p class="mt-3 flex items-center gap-2 text-sm text-white/80">
+                    <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
+                  </p>
+                </div>
+                <ul class="grid grid-cols-3 divide-x divide-primary/20 bg-secondary text-primary">
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Scale</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">36 units</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Size</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">1,350+ sqft</p>
+                  </li>
+                  <li class="px-4 py-3 sm:px-5">
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.15em] text-primary/70">Handover</p>
+                    <p class="mt-0.5 font-display text-lg font-bold uppercase">Jun 2027</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section class="bg-primary py-20 text-white lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-secondary">Featured projects</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              Our recent work
+            </h2>
+          </div>
+          <a href="./pages/projects.html"
+            class="group relative inline-flex w-fit items-center gap-3 overflow-hidden bg-secondary px-7 py-3.5 text-sm font-semibold text-primary before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-concrete before:transition-transform before:duration-300 hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+            <span class="relative">View all projects</span>
+            <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
+              aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <!-- Project cards -->
+        <div class="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+          <!-- Project 1 -->
+          <article>
+            <a href="./pages/project-details.html"
+              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1000&q=80"
+                  alt="Bhitti Heights apartment building" loading="lazy"
+                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <span
+                  class="absolute left-4 top-4 bg-white px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Completed</span>
+                <span
+                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <div class="p-6 lg:p-7">
+                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Bhitti Heights</h3>
+                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
+                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Dhanmondi, Dhaka
+                </p>
+                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
+                  <li class="pe-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">48 units</p>
+                  </li>
+                  <li class="px-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">1,200+ sqft</p>
+                  </li>
+                  <li class="ps-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">2024</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 2 -->
+          <article>
+            <a href="./pages/project-details.html"
+              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
+              <div class="relative aspect-4/3 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80"
+                  alt="Orchard Tower commercial building" loading="lazy"
+                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <span
+                  class="absolute left-4 top-4 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Commercial</span>
+              </div>
+              <div class="p-6 lg:p-7">
+                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Orchard Tower</h3>
+                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
+                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Banani, Dhaka
+                </p>
+                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
+                  <li class="pe-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">14 floors</p>
+                  </li>
+                  <li class="px-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">85,000 sqft</p>
+                  </li>
+                  <li class="ps-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">Dec 2026</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="md:col-span-2 lg:col-span-1">
+            <a href="./pages/project-details.html"
+              class="group block border-b-4 border-transparent bg-primary-light transition-colors duration-300 hover:border-secondary">
+              <div class="relative aspect-4/3 overflow-hidden md:aspect-video lg:aspect-4/3">
+                <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1000&q=80"
+                  alt="Lakeview Residence apartment building" loading="lazy"
+                  class="size-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <span
+                  class="absolute left-4 top-4 bg-secondary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-primary">Ongoing</span>
+                <span
+                  class="absolute right-4 top-4 bg-primary px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.12em] text-white">Residential</span>
+              </div>
+              <div class="p-6 lg:p-7">
+                <h3 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Lakeview Residence</h3>
+                <p class="mt-3 flex items-center gap-2 text-sm text-white/65">
+                  <i class="fa-solid fa-location-dot text-secondary" aria-hidden="true"></i>Uttara, Dhaka
+                </p>
+                <ul class="mt-6 grid grid-cols-3 divide-x divide-white/10 border-t border-white/10 pt-5">
+                  <li class="pe-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Scale</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">36 units</p>
+                  </li>
+                  <li class="px-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Size</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">1,350+ sqft</p>
+                  </li>
+                  <li class="ps-3">
+                    <p class="text-[11px] font-semibold uppercase tracking-[0.15em] text-white/45">Handover</p>
+                    <p class="mt-1 font-display text-xl font-semibold uppercase">Jun 2027</p>
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- Process -->
+    <section class="bg-paper py-20 text-primary lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <!-- Heading -->
+        <div class="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">How we work</p>
+            <h2
+              class="mt-3 font-display text-4xl font-bold uppercase leading-none tracking-tight sm:text-5xl lg:text-6xl">
+              From first call to final handover
+            </h2>
+          </div>
+          <p class="max-w-md text-base leading-8 text-primary/70">
+            A clear five-step process, so you always know what is happening and what comes next.
+          </p>
+        </div>
+
+        <!-- Steps -->
+        <ol
+          class="relative mt-16 grid gap-12 before:absolute before:bottom-0 before:left-5 before:top-0 before:w-0.5 before:bg-primary/15 lg:grid-cols-5 lg:gap-8 lg:before:bottom-auto lg:before:left-0 lg:before:right-0 lg:before:top-5 lg:before:h-0.5 lg:before:w-auto">
+
+          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+            <span
+              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">1</span>
+            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Consultation</h3>
+            <p class="mt-3 text-sm leading-7 text-primary/65">
+              We listen to your plot, budget and goals, then outline what is possible.
+            </p>
+          </li>
+
+          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+            <span
+              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">2</span>
+            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Design</h3>
+            <p class="mt-3 text-sm leading-7 text-primary/65">
+              Architects and engineers prepare plans, drawings and a clear cost estimate.
+            </p>
+          </li>
+
+          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+            <span
+              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">3</span>
+            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Approval</h3>
+            <p class="mt-3 text-sm leading-7 text-primary/65">
+              We handle permits and authority approvals so you never have to chase paperwork.
+            </p>
+          </li>
+
+          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+            <span
+              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-secondary font-display text-xl font-bold text-primary">4</span>
+            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Construction</h3>
+            <p class="mt-3 text-sm leading-7 text-primary/65">
+              Skilled crews build to plan, with regular site updates and quality checks.
+            </p>
+          </li>
+
+          <li class="relative ps-16 lg:ps-0 lg:pt-16">
+            <span
+              class="absolute start-0 top-0 z-10 flex size-10 items-center justify-center bg-primary font-display text-xl font-bold text-secondary">5</span>
+            <h3 class="font-display text-2xl font-bold uppercase leading-none tracking-wide">Handover</h3>
+            <p class="mt-3 text-sm leading-7 text-primary/65">
+              Final inspection, documents and keys, followed by warranty support.
+            </p>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="bg-paper py-20 text-primary lg:py-28">
+      <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
+
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-primary/60">Client stories</p>
+
+        <!-- Carousel (Preline, no custom JS) -->
+        <div data-hs-carousel='{"loadingClasses": "opacity-0", "isInfiniteLoop": true}' class="relative mt-8">
+
+          <div class="hs-carousel relative min-h-[560px] w-full overflow-hidden sm:min-h-[460px] lg:min-h-[440px]">
+            <div
+              class="hs-carousel-body absolute bottom-0 start-0 top-0 flex flex-nowrap opacity-0 transition-transform duration-700 ease-out">
+
+              <!-- Slide 1 -->
+              <div class="hs-carousel-slide">
+                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
+                  <div>
+                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
+                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
+                    </span>
+                    <blockquote
+                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
+                      Bhitti handed over our apartment two weeks before the date they promised, and the finish was
+                      better
+                      than the model flat. Every question got a straight answer.
+                    </blockquote>
+                  </div>
+                  <figcaption class="flex items-center gap-4">
+                    <span class="h-12 w-1 bg-secondary"></span>
+                    <div>
+                      <p class="text-base font-semibold">Farhana Rahman</p>
+                      <p class="text-sm text-primary/60">Homeowner, Lakeview Residence</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="hs-carousel-slide">
+                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
+                  <div>
+                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
+                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
+                    </span>
+                    <blockquote
+                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
+                      We built our head office with them. The site stayed safe, the updates came every week and the
+                      budget
+                      never moved from the first estimate.
+                    </blockquote>
+                  </div>
+                  <figcaption class="flex items-center gap-4">
+                    <span class="h-12 w-1 bg-secondary"></span>
+                    <div>
+                      <p class="text-base font-semibold">Tanvir Ahmed</p>
+                      <p class="text-sm text-primary/60">Managing Director, Orchard Group</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="hs-carousel-slide">
+                <figure class="flex h-full flex-col justify-between gap-10 pe-2">
+                  <div>
+                    <span class="flex size-14 items-center justify-center bg-secondary text-primary">
+                      <i class="fa-solid fa-quote-left text-xl" aria-hidden="true"></i>
+                    </span>
+                    <blockquote
+                      class="mt-8 max-w-5xl font-display text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-5xl">
+                      From permits to plumbing, one team handled everything. We moved in without a single call to chase
+                      anyone.
+                    </blockquote>
+                  </div>
+                  <figcaption class="flex items-center gap-4">
+                    <span class="h-12 w-1 bg-secondary"></span>
+                    <div>
+                      <p class="text-base font-semibold">Nusrat Jahan</p>
+                      <p class="text-sm text-primary/60">Property owner, Riverside Court</p>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="mt-10 flex items-center gap-6 border-t border-primary/15 pt-8">
+            <div class="flex gap-2">
+              <button type="button" aria-label="Previous testimonial"
+                class="hs-carousel-prev hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <i class="fa-solid fa-arrow-left text-sm" aria-hidden="true"></i>
+              </button>
+              <button type="button" aria-label="Next testimonial"
+                class="hs-carousel-next hs-carousel-disabled:pointer-events-none hs-carousel-disabled:opacity-40 flex size-12 items-center justify-center border border-primary/25 text-primary transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+              </button>
+            </div>
+
+            <div class="hs-carousel-pagination flex items-center gap-2">
+              <span
+                class="h-1 w-6 cursor-pointer bg-primary/20 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
+              <span
+                class="h-1 w-6 cursor-pointer bg-primary/20 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
+              <span
+                class="h-1 w-6 cursor-pointer bg-primary/20 transition-all duration-300 hs-carousel-active:w-10 hs-carousel-active:bg-secondary"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- CTA -->
+    <section class="bg-secondary py-16 text-primary lg:py-24">
+      <div class="mx-auto grid max-w-350 items-center gap-10 px-4 sm:px-6 lg:grid-cols-12 lg:gap-16 lg:px-8">
+
+        <!-- Heading -->
+        <div class="lg:col-span-7">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em]">Start your project</p>
+          <h2
+            class="mt-4 font-display text-5xl font-extrabold uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+            Have a plot? Let's build.
+          </h2>
+        </div>
+
+        <!-- Form -->
+        <div class="lg:col-span-5">
+          <p class="max-w-md text-base leading-7 text-primary/80">
+            Leave your phone number and our team will call you back to talk through your plot, budget and timeline.
+          </p>
+
+          <form action="#" method="post" class="mt-6">
+            <div class="flex flex-col sm:flex-row">
+              <label for="cta-phone" class="sr-only">Phone number</label>
+              <input type="tel" id="cta-phone" name="phone" required autocomplete="tel" placeholder="Your phone number"
+                class="w-full border-2 border-primary bg-transparent px-5 py-4 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/60 focus:bg-white" />
+              <button type="submit"
+                class="group relative inline-flex shrink-0 items-center justify-center gap-3 overflow-hidden border-2 border-primary bg-primary px-8 py-4 text-sm font-semibold text-white transition-colors duration-300 before:absolute before:inset-0 before:origin-top before:scale-y-0 before:bg-white before:transition-transform before:duration-300 hover:text-primary hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <span class="relative">Call me back</span>
+                <i class="fa-solid fa-arrow-right relative text-xs transition-transform duration-300 group-hover:translate-x-1"
+                  aria-hidden="true"></i>
+              </button>
+            </div>
+            <p class="mt-3 text-xs text-primary/70">We usually respond within one working day.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
 
 
-    <script src="./node_modules/preline/dist/preline.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+  <!-- Footer -->
+  <footer class="bg-primary text-white">
+    <div class="mx-auto max-w-350 px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20">
+
+      <div class="grid gap-12 lg:grid-cols-12 lg:gap-10">
+
+        <!-- Brand -->
+        <div class="lg:col-span-4">
+          <a href="./index.html" aria-label="Bhitti home" class="inline-flex items-center gap-3">
+            <span
+              class="flex size-11 items-center justify-center bg-secondary font-display text-3xl font-extrabold leading-none text-primary">B</span>
+            <span class="font-display text-3xl font-bold uppercase leading-none tracking-[0.14em]">Bhitti</span>
+          </a>
+          <p class="mt-6 max-w-sm text-sm leading-7 text-white/60">
+            Builders and developers delivering homes and commercial spaces across Dhaka, on time and to standard.
+          </p>
+          <ul class="mt-8 flex gap-2">
+            <li>
+              <a href="#" aria-label="Facebook"
+                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
+                <i class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="LinkedIn"
+                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
+                <i class="fa-brands fa-linkedin-in text-sm" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Instagram"
+                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
+                <i class="fa-brands fa-instagram text-sm" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="YouTube"
+                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
+                <i class="fa-brands fa-youtube text-sm" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <nav class="lg:col-span-2" aria-label="Company">
+          <h3 class="font-display text-xl font-bold uppercase tracking-[0.1em]">Company</h3>
+          <span class="mt-3 block h-0.5 w-8 bg-secondary"></span>
+          <ul class="mt-7 space-y-4 text-sm text-white/65">
+            <li><a href="./index.html"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Home</a>
+            </li>
+            <li><a href="./pages/about.html"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>About
+                us</a></li>
+            <li><a href="./pages/services.html"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Services</a>
+            </li>
+            <li><a href="./pages/projects.html"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Projects</a>
+            </li>
+            <li><a href="./pages/contact.html"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Services -->
+        <nav class="lg:col-span-2" aria-label="Services">
+          <h3 class="font-display text-xl font-bold uppercase tracking-[0.1em]">Services</h3>
+          <span class="mt-3 block h-0.5 w-8 bg-secondary"></span>
+          <ul class="mt-7 space-y-4 text-sm text-white/65">
+            <li><a href="./pages/services.html#residential"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Residential</a>
+            </li>
+            <li><a href="./pages/services.html#commercial"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Commercial</a>
+            </li>
+            <li><a href="./pages/services.html#renovation"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Renovation</a>
+            </li>
+            <li><a href="./pages/services.html#infrastructure"
+                class="group inline-flex items-center gap-0 transition-colors duration-200 hover:text-white"><span
+                  class="h-px w-0 bg-secondary transition-all duration-300 group-hover:me-3 group-hover:w-4"></span>Infrastructure</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Contact panel -->
+        <div class="bg-primary-light p-7 lg:col-span-4 lg:p-9">
+          <h3 class="font-display text-xl font-bold uppercase tracking-[0.1em]">Get in touch</h3>
+          <span class="mt-3 block h-0.5 w-8 bg-secondary"></span>
+
+          <a href="tel:+8801700000000"
+            class="mt-7 block font-display text-4xl font-bold leading-none tracking-wide text-secondary transition-colors duration-200 hover:text-white">
+            +880 1700-000000
+          </a>
+
+          <ul class="mt-7 space-y-5 text-sm text-white/65">
+            <li>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/40">Email</p>
+              <a href="mailto:info@bhitti.com"
+                class="mt-1 inline-block text-white transition-colors duration-200 hover:text-secondary">info@bhitti.com</a>
+            </li>
+            <li>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/40">Office</p>
+              <address class="mt-1 not-italic leading-7 text-white">House 12, Road 5, Dhanmondi, Dhaka 1209</address>
+            </li>
+            <li>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/40">Hours</p>
+              <p class="mt-1 text-white">Sat to Thu, 9:00 AM to 6:00 PM</p>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom bar -->
+      <div
+        class="mt-16 flex flex-col gap-3 border-t border-white/10 py-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+        <p>&copy; 2026 Bhitti Builders &amp; Developers. All rights reserved.</p>
+        <ul class="flex gap-6">
+          <li><a href="#" class="transition-colors duration-200 hover:text-secondary">Privacy policy</a></li>
+          <li><a href="#" class="transition-colors duration-200 hover:text-secondary">Terms of use</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="./node_modules/preline/dist/preline.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
