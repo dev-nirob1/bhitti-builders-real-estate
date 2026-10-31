@@ -104,58 +104,53 @@
   </header>
   
 
-<!-- Contact page: sections only (navbar and footer are added separately) -->
+<!-- Page hero -->
+<section class="relative isolate overflow-hidden bg-primary py-20 text-center text-white lg:py-32">
+  <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=2000&q=80"
+    alt="" class="absolute inset-0 -z-20 size-full object-cover" />
+  <div class="absolute inset-0 -z-10 bg-primary/80" aria-hidden="true"></div>
 
-<!-- Header -->
-<section class="bg-white pt-14 text-primary lg:pt-20">
-  <div class="mx-auto max-w-350 px-4 sm:px-6 lg:px-8">
-
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
     <nav aria-label="Breadcrumb">
-      <ol class="flex items-center gap-3 text-sm text-primary/55">
-        <li><a href="../index.html" class="transition-colors duration-200 hover:text-primary">Home</a></li>
-        <li aria-hidden="true" class="text-primary/30">/</li>
-        <li aria-current="page" class="font-medium text-primary">Contact</li>
+      <ol class="flex items-center justify-center gap-3 text-sm font-semibold uppercase tracking-[0.15em]">
+        <li><a href="../index.html" class="text-white/70 transition-colors hover:text-secondary">Home</a></li>
+        <li aria-hidden="true"><i class="fa-solid fa-chevron-right text-[10px] text-white/50"></i></li>
+        <li aria-current="page" class="text-secondary">Contact</li>
       </ol>
     </nav>
 
-    <div class="mt-12 grid gap-8 lg:grid-cols-12 lg:items-end lg:gap-16">
-      <div class="lg:col-span-8">
-        <span class="block h-1 w-16 bg-secondary"></span>
-        <h1 class="mt-6 font-display text-5xl font-bold uppercase leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
-          Tell us about your project
-        </h1>
-      </div>
-      <p class="text-lg leading-8 text-primary/70 lg:col-span-4">
-        Share a few details and a senior engineer will call you back, usually within one working day.
-      </p>
-    </div>
-
+    <h1 class="mt-6 font-display text-5xl font-bold uppercase leading-none tracking-tight sm:text-6xl lg:text-7xl">
+      Contact us
+    </h1>
+    <p class="mx-auto mt-6 max-w-xl text-base leading-8 text-white/80 lg:text-lg">
+      Share a few details and a senior engineer will call you back, usually within one working day.
+    </p>
   </div>
 </section>
 
 <!-- Form and office details -->
 <section class="bg-white py-16 text-primary lg:py-24">
-  <div class="mx-auto grid max-w-350 gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:gap-20 lg:px-8">
-
-    <!-- Form: one grid, one gap, so every row is spaced the same -->
-    <form action="#" method="post" class="grid content-start gap-x-6 gap-y-6 sm:grid-cols-2 lg:col-span-7">
+  <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+      <!-- Form: one grid, one gap, so every row is spaced the same -->
+      <form action="#" method="post" class="grid content-start gap-6 sm:grid-cols-2 lg:col-span-7">
+        <h2 class="font-display text-3xl font-bold uppercase leading-none tracking-wide sm:col-span-2">Send us an enquiry</h2>
 
       <div>
         <label for="c-name" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Full name <span class="text-primary">*</span></label>
-        <input type="text" id="c-name" name="name" required autocomplete="name"
-          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 focus:border-primary" />
+        <input type="text" id="c-name" name="name" required autocomplete="name" placeholder="Your full name"
+          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
       </div>
 
       <div>
         <label for="c-phone" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Phone <span class="text-primary">*</span></label>
-        <input type="tel" id="c-phone" name="phone" required autocomplete="tel"
-          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 focus:border-primary" />
+        <input type="tel" id="c-phone" name="phone" required autocomplete="tel" placeholder="01XXX-XXXXXX"
+          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
       </div>
 
       <div>
         <label for="c-email" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Email</label>
-        <input type="email" id="c-email" name="email" autocomplete="email"
-          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 focus:border-primary" />
+        <input type="email" id="c-email" name="email" autocomplete="email" placeholder="you@example.com"
+          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
       </div>
 
       <div>
@@ -174,10 +169,10 @@
         <label for="c-plot" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Plot size</label>
         <div class="mt-2 flex">
           <input type="number" min="0" step="any" id="c-plot" name="plot_size" placeholder="e.g. 5"
-            class="block w-full min-w-0 border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
+            class="block w-full min-w-0 border border-primary/20  px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
           <label for="c-plot-unit" class="sr-only">Plot size unit</label>
           <select id="c-plot-unit" name="plot_unit"
-            class="block border border-s-0 border-primary/20 bg-concrete px-3 py-3.5 text-base text-primary outline-none focus:border-primary">
+            class="block border border-s-0 border-primary/20 bg-white px-3 py-3.5 text-base text-primary outline-none focus:border-primary">
             <option value="katha">Katha</option>
             <option value="sqft">Sq ft</option>
           </select>
@@ -186,33 +181,19 @@
 
       <div>
         <label for="c-location" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Plot location</label>
-        <input type="text" id="c-location" name="plot_location" placeholder="Area, Dhaka"
+        <input type="text" id="c-location" name="plot_location" placeholder="e.g. Dhanmondi, Dhaka"
           class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary" />
       </div>
 
       <div class="sm:col-span-2">
-        <label for="c-budget" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Estimated budget</label>
-        <select id="c-budget" name="budget"
-          class="mt-2 block w-full border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 focus:border-primary">
-          <option value="">Select a range</option>
-          <option value="under-50l">Under ৳50 lakh</option>
-          <option value="50l-1cr">৳50 lakh to ৳1 crore</option>
-          <option value="1cr-3cr">৳1 crore to ৳3 crore</option>
-          <option value="3cr-10cr">৳3 crore to ৳10 crore</option>
-          <option value="above-10cr">Above ৳10 crore</option>
-          <option value="not-sure">Not sure yet</option>
-        </select>
-      </div>
-
-      <div class="sm:col-span-2">
         <label for="c-message" class="block text-xs font-semibold uppercase tracking-[0.15em] text-primary/55">Anything else we should know?</label>
-        <textarea id="c-message" name="message" rows="5"
-          class="mt-2 block w-full resize-y border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 focus:border-primary"></textarea>
+        <textarea id="c-message" name="message" rows="5" placeholder="Tell us about your plot, timeline and what you want to build"
+          class="mt-2 block w-full resize-y border border-primary/20 bg-white px-4 py-3.5 text-base text-primary outline-none transition-colors duration-200 placeholder:text-primary/35 focus:border-primary"></textarea>
       </div>
 
       <div class="flex flex-col gap-4 sm:col-span-2 sm:flex-row sm:items-center sm:gap-6">
         <button type="submit"
-          class="group relative isolate inline-flex w-full items-center justify-center gap-3 overflow-hidden bg-secondary px-9 py-4 text-sm font-semibold text-primary transition-colors duration-300 before:absolute before:inset-0 before:-z-10 before:origin-top before:scale-y-0 before:bg-primary before:transition-transform before:duration-300 hover:text-white hover:before:scale-y-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto">
+          class="group inline-flex w-full items-center justify-center gap-3 bg-secondary px-8 py-4 text-sm font-semibold uppercase tracking-[0.1em] text-primary transition-colors duration-300 hover:bg-primary hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-auto">
           Send enquiry
           <i class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true"></i>
         </button>
@@ -226,57 +207,64 @@
       <div class="bg-primary p-8 text-white lg:sticky lg:top-28 lg:p-10">
 
         <h2 class="font-display text-3xl font-bold uppercase leading-none tracking-wide">Office details</h2>
-        <span class="mt-4 block h-0.5 w-10 bg-secondary"></span>
 
-        <a href="tel:+8801700000000"
-          class="mt-8 block font-display text-4xl font-bold leading-none tracking-wide text-secondary transition-colors duration-200 hover:text-white">
-          +880 1700-000000
+        <a href="tel:+8801700000000" class="group mt-8 flex items-center gap-4">
+          <span class="flex size-12 shrink-0 items-center justify-center bg-secondary text-primary">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          </span>
+          <span class="font-display text-3xl font-bold leading-none tracking-wide group-hover:underline">+880 1700-000000</span>
         </a>
 
         <ul class="mt-8 space-y-6 text-sm">
-          <li>
-            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/45">Email</p>
-            <a href="mailto:info@bhitti.com" class="mt-1 inline-block text-base transition-colors duration-200 hover:text-secondary">info@bhitti.com</a>
+          <li class="flex gap-4">
+            <i class="fa-solid fa-envelope mt-1 w-5 text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">Email</p>
+              <a href="mailto:info@bhitti.com" class="mt-1 inline-block text-base transition-colors duration-200 hover:text-secondary">info@bhitti.com</a>
+            </div>
           </li>
-          <li>
-            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/45">Office</p>
-            <address class="mt-1 text-base not-italic leading-7">House 12, Road 5, Dhanmondi,<br />Dhaka 1209</address>
+          <li class="flex gap-4">
+            <i class="fa-solid fa-location-dot mt-1 w-5 text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">Office</p>
+              <address class="mt-1 text-base not-italic leading-7">House 12, Road 5, Dhanmondi,<br />Dhaka 1209</address>
+            </div>
           </li>
-          <li>
-            <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/45">Working hours</p>
-            <p class="mt-1 text-base leading-7">Saturday to Thursday<br />9:00 AM to 6:00 PM</p>
+          <li class="flex gap-4">
+            <i class="fa-solid fa-clock mt-1 w-5 text-secondary" aria-hidden="true"></i>
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/50">Working hours</p>
+              <p class="mt-1 text-base leading-7">Saturday to Thursday<br />9:00 AM to 6:00 PM</p>
+            </div>
           </li>
         </ul>
 
-        <div class="mt-10 border-t border-white/15 pt-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.15em] text-white/45">Follow our sites</p>
-          <ul class="mt-4 flex gap-2">
-            <li>
-              <a href="#" aria-label="Facebook"
-                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
-                <i class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="LinkedIn"
-                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
-                <i class="fa-brands fa-linkedin-in text-sm" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="Instagram"
-                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
-                <i class="fa-brands fa-instagram text-sm" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#" aria-label="YouTube"
-                class="flex size-10 items-center justify-center border border-white/20 text-white/80 transition-colors duration-200 hover:border-secondary hover:bg-secondary hover:text-primary">
-                <i class="fa-brands fa-youtube text-sm" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="mt-10 flex gap-2">
+          <li>
+            <a href="#" aria-label="Facebook"
+              class="flex size-10 items-center justify-center bg-white/10 transition-colors duration-200 hover:bg-secondary hover:text-primary">
+              <i class="fa-brands fa-facebook-f text-sm" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="LinkedIn"
+              class="flex size-10 items-center justify-center bg-white/10 transition-colors duration-200 hover:bg-secondary hover:text-primary">
+              <i class="fa-brands fa-linkedin-in text-sm" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Instagram"
+              class="flex size-10 items-center justify-center bg-white/10 transition-colors duration-200 hover:bg-secondary hover:text-primary">
+              <i class="fa-brands fa-instagram text-sm" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="YouTube"
+              class="flex size-10 items-center justify-center bg-white/10 transition-colors duration-200 hover:bg-secondary hover:text-primary">
+              <i class="fa-brands fa-youtube text-sm" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
 
       </div>
     </aside>
@@ -285,14 +273,12 @@
 </section>
 
 <!-- Map: full screen width, outside the container -->
-<section aria-label="Office location" class="h-96 w-full bg-concrete lg:h-130">
+<section aria-label="Office location" class="mb-20 h-96 w-full bg-concrete lg:h-130">
   <iframe title="Map showing the Bhitti office in Dhanmondi, Dhaka"
     src="https://www.google.com/maps?q=Dhanmondi,+Dhaka&output=embed"
     loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
     class="size-full border-0"></iframe>
 </section>
-
-
 
 
 

@@ -13,13 +13,29 @@
   --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --animate-marquee: marquee 30s linear infinite;
+
   @keyframes marquee {
-    to { transform: translateX(-50%); }
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
+
+@layer base {
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary,
+  select,
+  input[type="radio"]+label,
+  input[type="checkbox"]+label {
+    cursor: pointer;
+  }
+}
+
 .project-filter:has(#f-residential:checked) [data-project]:not([data-type~="residential"]),
-.project-filter:has(#f-commercial:checked)  [data-project]:not([data-type~="commercial"]),
-.project-filter:has(#f-ongoing:checked)     [data-project]:not([data-type~="ongoing"]),
-.project-filter:has(#f-completed:checked)   [data-project]:not([data-type~="completed"]) {
+.project-filter:has(#f-commercial:checked) [data-project]:not([data-type~="commercial"]),
+.project-filter:has(#f-ongoing:checked) [data-project]:not([data-type~="ongoing"]),
+.project-filter:has(#f-completed:checked) [data-project]:not([data-type~="completed"]) {
   display: none;
 }
