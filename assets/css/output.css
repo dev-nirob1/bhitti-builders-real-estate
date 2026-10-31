@@ -596,9 +596,6 @@
   .h-2\.5\! {
     height: calc(var(--spacing) * 2.5) !important;
   }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
